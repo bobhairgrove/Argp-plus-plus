@@ -100,7 +100,7 @@ COPYING and COPYING.LESSER for complete license details.
 
 Written by Robert Hairgrove. Copyright (c) 2017 by Robert Hairgrove and
 the Free Software Foundation. All feature requests and bug reports are
-welcome and should be sent to Robert Hairgrove <code@roberthairgrove.com>,
+welcome and should be sent to Robert Hairgrove, <code@roberthairgrove.com>,
 or you can create an issue at Github under the project URL mentioned above.
 
 --
