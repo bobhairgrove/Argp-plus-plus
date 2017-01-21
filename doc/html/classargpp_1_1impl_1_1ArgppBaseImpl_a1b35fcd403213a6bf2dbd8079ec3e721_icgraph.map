@@ -1,0 +1,4 @@
+<map id="argpp::impl::ArgppBaseImpl::getArgv" name="argpp::impl::ArgppBaseImpl::getArgv">
+<area shape="rect" id="node2" href="$classargpp_1_1ArgppBase.html#a9c73f4381a2e17d077ae97ff092e5f4a" title="Returns the argv argument passed to the main() function, or NULL if the root parser hasn’t yet been ..." alt="" coords="236,13,415,39"/>
+<area shape="rect" id="node3" href="$structargpp_1_1Factory.html#a02b3e834890ce3bf710b2ca62de53564" title="Call this function to create instances of classes derived from ArgppBase. " alt="" coords="463,13,651,39"/>
+</map>

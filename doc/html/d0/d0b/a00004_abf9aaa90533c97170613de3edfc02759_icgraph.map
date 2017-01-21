@@ -1,0 +1,17 @@
+<map id="argpp::impl::ArgppBaseImpl::addNonOptionArg" name="argpp::impl::ArgppBaseImpl::addNonOptionArg">
+<area shape="rect" id="node2" href="$d1/d7c/a00003.html#aea590ea43bd193ef8581dfa3cd6ea1be" title="Derived classes can call this function in the implementation of keyArgImpl() when an option and any a..." alt="" coords="238,19,417,61"/>
+<area shape="rect" id="node3" href="$d0/d0b/a00004.html#accf17857c8efde73cc937156efe3d08c" title="See documentation for ArgppBase::keyArgImpl() " alt="" coords="236,85,419,126"/>
+<area shape="rect" id="node14" href="$d0/d0b/a00004.html#a1b35fcd403213a6bf2dbd8079ec3e721" title="See documentation for ArgppBase::getArgv() " alt="" coords="236,150,419,191"/>
+<area shape="rect" id="node4" href="$d1/d7c/a00003.html#a9ba15c437b069be4ec41641c5df9e7d7" title="Called by argpp::impl::ArgppBaseImpl::parserRouter() when it is called by argp with the key ARGP_KEY_..." alt="" coords="467,95,667,121"/>
+<area shape="rect" id="node12" href="$d0/d0b/a00004.html#a6d4cfb33e45b3fe7d752b5d2abb8d0df" title="See documentation of argpp::ArgppBase::setChildFlags() for details. " alt="" coords="1412,94,1595,135"/>
+<area shape="rect" id="node5" href="$d0/d0b/a00004.html#a69cc68da5b9e4dddd782b8990dc22295" title="This is the only parser function used in argp++ which communicates with argp as a callback function..." alt="" coords="717,90,900,131"/>
+<area shape="rect" id="node6" href="$d0/d0b/a00004.html#aae3209d035a626fe93afc29fe55be7ee" title="Called by prepareParserVecs(). " alt="" coords="951,90,1133,131"/>
+<area shape="rect" id="node10" href="$d0/d0b/a00004.html#ac60b34fcdd3b86d1af98da3c59cf22c5" title="See documentation for argpp::ArgppBase::rootHasNonOptionArgs() for more details. " alt="" coords="1648,218,1831,259"/>
+<area shape="rect" id="node7" href="$d0/d0b/a00004.html#a497d37ba22797241adfb6361f61e6476" title="This is called by parse() before argp_parse() is called. " alt="" coords="1181,149,1364,190"/>
+<area shape="rect" id="node8" href="$d0/d0b/a00004.html#a13bc2299f39546454650655b9396e436" title="See documentation for ArgppBase::parse() " alt="" coords="1412,159,1595,201"/>
+<area shape="rect" id="node9" href="$d1/d7c/a00003.html#a636e133fd2c194a1794de170b8694c9b" title="This will call argp_parse() after setting up the low&#45;level arrays of options and child parsers (i..." alt="" coords="1656,167,1823,193"/>
+<area shape="rect" id="node11" href="$d1/d7c/a00003.html#a0ff8e1cadd3eda18d1cd6cf9a3480f6d" title="Tells where non&#45;option arguments entered on the command line are stored: either in the root instance..." alt="" coords="1884,218,2064,259"/>
+<area shape="rect" id="node13" href="$d1/d7c/a00003.html#a7e30adad84bf9de80809ae83b0e6168a" title="See documentation of setChildFlags() for details. " alt="" coords="1643,72,1836,99"/>
+<area shape="rect" id="node15" href="$d1/d7c/a00003.html#a9c73f4381a2e17d077ae97ff092e5f4a" title="Returns the argv argument passed to the main() function, or NULL if the root parser hasn’t yet been ..." alt="" coords="477,157,656,184"/>
+<area shape="rect" id="node16" href="$de/d21/a00006.html#a02b3e834890ce3bf710b2ca62de53564" title="Call this function to create instances of classes derived from ArgppBase. " alt="" coords="715,157,903,184"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="argpp::impl::ArgppBaseImpl::argppError" name="argpp::impl::ArgppBaseImpl::argppError">
+<area shape="rect" id="node2" href="$classargpp_1_1ArgppBase.html#a11c6c4526a2a88a904ca2fd8f6370eac" title="Wraps the argp_error() function. " alt="" coords="236,5,431,32"/>
+<area shape="rect" id="node3" href="$classargpp_1_1impl_1_1ArgppBaseImpl.html#ac60b34fcdd3b86d1af98da3c59cf22c5" title="See documentation for argpp::ArgppBase::rootHasNonOptionArgs() for more details. " alt="" coords="242,57,425,98"/>
+<area shape="rect" id="node4" href="$classargpp_1_1ArgppBase.html#a0ff8e1cadd3eda18d1cd6cf9a3480f6d" title="Tells where non&#45;option arguments entered on the command line are stored: either in the root instance..." alt="" coords="479,57,659,98"/>
+</map>

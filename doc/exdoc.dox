@@ -1,0 +1,194 @@
+/**
+@page exampl Examples
+There are ten demo programs in the "examples" folder illustrating usage of the 
+\b Argp++ library. Nine of these are taken from the "step" examples in the book 
+<a href="http://www.nongnu.org/argpbook/" target="_blank" 
+style="font-style:italic;font-weight:bold">&ldquo;Step-By-Step 
+Into Argp&rdquo;</a>&nbsp;by Ben Asselstine (Copyright &copy; 2010, 2015). The example 
+\b argpp_test.cpp was taken from GNU glib source code in 
+<a href="https://github.com/lattera/glibc/blob/master/argp/argp-test.c" 
+target="_blank">argp-test.c.</a><br>
+<br>
+I only implemented up to and including Step 8 in the book because the last steps require linking other
+GNU libraries to the program such as \b _argz_ and \b _readline_. Since the wrapper classes 
+are intended to work with stand-alone implementations of _argp_, it would have
+introduced unnecessary complexity for those users. I am sure it would be quite possible
+to do, so I am leaving this as an exercise for the user.
+<hr>
+Here are links to the source code of the examples:
+@section exsources Example sources:
+ -# @ref boilerplate
+ -# @ref argp_test
+ -# @ref step0
+ -# @ref step1
+ -# @ref step2
+ -# @ref step3
+ -# @ref step4
+ -# @ref step5
+ -# @ref step6
+ -# @ref step7
+ -# @ref step8
+<hr>
+
+@section boilerplate boilerplate.cpp
+<span style="background-color:yellow">
+This contains functions used by all of the demo programs. It is used to build
+a convenience library which is linked into the example programs when
+<tt>&ldquo;make&nbsp;examples&rdquo;</tt> is entered on the command line.
+</span>
+<p><a href="#">Back to top...</a></p>
+Source code:
+@include boilerplate/boilerplate.cpp
+<p><a href="#">Back to top...</a></p>
+<hr>
+
+@section argp_test ex_argp_test.cpp
+<span style="background-color:yellow">
+Based on the file \b argp-test.c located here:
+https://github.com/lattera/glibc/blob/master/argp/argp-test.c
+</span>
+<p><a href="#">Back to top...</a></p>
+Source code:
+@include ex_argp_test/ex_argp_test.cpp
+<p><a href="#">Back to top...</a></p>
+<hr>
+
+@section step0 ex_step_0.cpp
+<span style="background-color:yellow">
+A minimal argp++ application with no options except for the built-ins: `--help`, `--usage` and `--version`.
+</span>
+<br>
+<br>Taken from the "step" examples in the book 
+<a href="http://www.nongnu.org/argpbook/" target="_blank" 
+style="font-style:italic;font-weight:bold">&ldquo;Step-By-Step 
+Into Argp&rdquo;</a>&nbsp;by Ben Asselstine (Copyright &copy; 2010, 2015).
+<p><a href="#">Back to top...</a></p>
+Source code:
+@include ex_step_0/ex_step_0.cpp
+<p><a href="#">Back to top...</a></p>
+<hr>
+
+@section step1 ex_step_1.cpp
+<span style="background-color:yellow">
+An Argp-enabled program with one option.
+</span>
+<br>
+<br>Taken from the "step" examples in the book 
+<a href="http://www.nongnu.org/argpbook/" target="_blank" 
+style="font-style:italic;font-weight:bold">&ldquo;Step-By-Step 
+Into Argp&rdquo;</a>&nbsp;by Ben Asselstine (Copyright &copy; 2010, 2015).
+<p><a href="#">Back to top...</a></p>
+Source code:
+@include ex_step_1/ex_step_1.cpp
+<p><a href="#">Back to top...</a></p>
+<hr>
+
+@section step2 ex_step_2.cpp
+<span style="background-color:yellow">
+An Argp-enabled program with an option that has a mandatory argument.
+</span>
+<br>
+<br>Taken from the "step" examples in the book 
+<a href="http://www.nongnu.org/argpbook/" target="_blank" 
+style="font-style:italic;font-weight:bold">&ldquo;Step-By-Step 
+Into Argp&rdquo;</a>&nbsp;by Ben Asselstine (Copyright &copy; 2010, 2015).
+<p><a href="#">Back to top...</a></p>
+Source code:
+@include ex_step_2/ex_step_2.cpp
+<p><a href="#">Back to top...</a></p>
+<hr>
+
+@section step3 ex_step_3.cpp
+<span style="background-color:yellow">
+An Argp-enabled program with a long option that has a mandatory argument.
+</span>
+<br>
+<br>Taken from the "step" examples in the book 
+<a href="http://www.nongnu.org/argpbook/" target="_blank" 
+style="font-style:italic;font-weight:bold">&ldquo;Step-By-Step 
+Into Argp&rdquo;</a>&nbsp;by Ben Asselstine (Copyright &copy; 2010, 2015).
+<p><a href="#">Back to top...</a></p>
+Source code:
+@include ex_step_3/ex_step_3.cpp
+<p><a href="#">Back to top...</a></p>
+<hr>
+
+@section step4 ex_step_4.cpp
+<span style="background-color:yellow">
+An Argp-enabled program with a long option that has an optional argument.
+</span>
+<br>
+<br>Taken from the "step" examples in the book 
+<a href="http://www.nongnu.org/argpbook/" target="_blank" 
+style="font-style:italic;font-weight:bold">&ldquo;Step-By-Step 
+Into Argp&rdquo;</a>&nbsp;by Ben Asselstine (Copyright &copy; 2010, 2015).
+<p><a href="#">Back to top...</a></p>
+Source code:
+@include ex_step_4/ex_step_4.cpp
+<p><a href="#">Back to top...</a></p>
+<hr>
+
+@section step5 ex_step_5.cpp
+<span style="background-color:yellow">
+An Argp-enabled program with an aliased long option.
+</span>
+<br>
+<br>Taken from the "step" examples in the book 
+<a href="http://www.nongnu.org/argpbook/" target="_blank" 
+style="font-style:italic;font-weight:bold">&ldquo;Step-By-Step 
+Into Argp&rdquo;</a>&nbsp;by Ben Asselstine (Copyright &copy; 2010, 2015).
+<p><a href="#">Back to top...</a></p>
+Source code:
+@include ex_step_5/ex_step_5.cpp
+<p><a href="#">Back to top...</a></p>
+<hr>
+
+@section step6 ex_step_6.cpp
+<span style="background-color:yellow">
+An Argp-enabled program that calls its own callback function.
+</span>
+<br>
+<br>Taken from the "step" examples in the book 
+<a href="http://www.nongnu.org/argpbook/" target="_blank" 
+style="font-style:italic;font-weight:bold">&ldquo;Step-By-Step 
+Into Argp&rdquo;</a>&nbsp;by Ben Asselstine (Copyright &copy; 2010, 2015).
+<p><a href="#">Back to top...</a></p>
+Source code:
+@include ex_step_6/ex_step_6.cpp
+<p><a href="#">Back to top...</a></p>
+<hr>
+
+@section step7 ex_step_7.cpp
+<span style="background-color:yellow">
+An Argp-enabled program that accepts arguments. Callback funcion.
+Illustrates use of the _argppFailure_ member function as well as
+overriding the virtual _keyArgImpl_ and _keyEndImpl_ members.
+Also illustrates the _setUsageMessage_ member function to set the
+`argp_doc` string.
+</span>
+<br>
+<br>Taken from the "step" examples in the book 
+<a href="http://www.nongnu.org/argpbook/" target="_blank" 
+style="font-style:italic;font-weight:bold">&ldquo;Step-By-Step 
+Into Argp&rdquo;</a>&nbsp;by Ben Asselstine (Copyright &copy; 2010, 2015).
+<p><a href="#">Back to top...</a></p>
+Source code:
+@include ex_step_7/ex_step_7.cpp
+<p><a href="#">Back to top...</a></p>
+<hr>
+
+@section step8 ex_step_8.cpp
+<span style="background-color:yellow">
+An Argp-enabled program that accepts a hidden option. Callback function.
+</span>
+<br>
+<br>Taken from the "step" examples in the book 
+<a href="http://www.nongnu.org/argpbook/" target="_blank" 
+style="font-style:italic;font-weight:bold">&ldquo;Step-By-Step 
+Into Argp&rdquo;</a>&nbsp;by Ben Asselstine (Copyright &copy; 2010, 2015).
+<p><a href="#">Back to top...</a></p>
+Source code:
+@include ex_step_8/ex_step_8.cpp
+<p><a href="#">Back to top...</a></p>
+*/
+

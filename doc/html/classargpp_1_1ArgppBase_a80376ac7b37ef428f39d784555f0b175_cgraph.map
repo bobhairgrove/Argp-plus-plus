@@ -1,0 +1,8 @@
+<map id="argpp::ArgppBase::ArgppBase" name="argpp::ArgppBase::ArgppBase">
+<area shape="rect" id="node2" href="$classargpp_1_1ArgppBase.html#a8b4b9d0a702650c6d52e87673f729806" title="Adds a child parser to the current object. " alt="" coords="252,46,437,73"/>
+<area shape="rect" id="node3" href="$classargpp_1_1impl_1_1ArgppBaseImpl.html#ad15f919a979fc5267a6c91fa031f7a11" title="See documentation for ArgppBase::addChild() " alt="" coords="485,39,668,80"/>
+<area shape="rect" id="node4" href="$classargpp_1_1impl_1_1ArgppBaseImpl.html#a2840df24de2ee9af008280bcc92c4839" title="See documentation for ArgppBase::isChildOfThisParent() " alt="" coords="716,5,899,47"/>
+<area shape="rect" id="node5" href="$classargpp_1_1impl_1_1ArgppBaseImpl.html#a4263ddef208a5ad720c89bcb2e2a4fb7" title="Removes the child from the parent&#39;s vector of children if it is found. " alt="" coords="716,71,899,112"/>
+<area shape="rect" id="node6" href="$classargpp_1_1ArgppBase.html#aa1cf3f1ddc1ba9f78baf8fbe9381c132" title="Returns the parent of the current object as a pointer to the base class. " alt="" coords="947,78,1137,105"/>
+<area shape="rect" id="node7" href="$classargpp_1_1impl_1_1ArgppBaseImpl.html#a2465e0dfea77d3adc2b59f9e313031cb" title="See documentation for ArgppBase::getParent() " alt="" coords="1185,71,1368,112"/>
+</map>

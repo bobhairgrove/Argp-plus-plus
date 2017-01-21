@@ -1,0 +1,17 @@
+<map id="argpp::impl::ArgppBaseImpl::addParsedOption" name="argpp::impl::ArgppBaseImpl::addParsedOption">
+<area shape="rect" id="node2" href="$d1/d7c/a00003.html#a9135994c8670f28b39f2c8587d7a37da" title="Derived classes can call this function in the implementation of parserImpl() when an option and any a..." alt="" coords="236,5,432,47"/>
+<area shape="rect" id="node3" href="$d0/d0b/a00004.html#a8a27dcd024621eeec4631d6d8c53be06" title="Overload taking just the key and an optional argument. " alt="" coords="243,71,425,112"/>
+<area shape="rect" id="node4" href="$d0/d0b/a00004.html#a3f51c426f7d6de98bfbb6239853dd2d5" title="See documentation for ArgppBase::genericParserImpl() " alt="" coords="243,136,425,177"/>
+<area shape="rect" id="node14" href="$d0/d0b/a00004.html#a1b35fcd403213a6bf2dbd8079ec3e721" title="See documentation for ArgppBase::getArgv() " alt="" coords="243,205,425,247"/>
+<area shape="rect" id="node5" href="$d1/d7c/a00003.html#a2dbd645f4d42f5a9cddcc1708e8864b5" title="A generic implementation of parserImpl() which clients can call. " alt="" coords="483,71,659,112"/>
+<area shape="rect" id="node6" href="$d0/d0b/a00004.html#a6d4cfb33e45b3fe7d752b5d2abb8d0df" title="See documentation of argpp::ArgppBase::setChildFlags() for details. " alt="" coords="480,136,663,177"/>
+<area shape="rect" id="node7" href="$d1/d7c/a00003.html#a7e30adad84bf9de80809ae83b0e6168a" title="See documentation of setChildFlags() for details. " alt="" coords="711,87,904,114"/>
+<area shape="rect" id="node8" href="$d0/d0b/a00004.html#aae3209d035a626fe93afc29fe55be7ee" title="Called by prepareParserVecs(). " alt="" coords="952,123,1135,164"/>
+<area shape="rect" id="node9" href="$d0/d0b/a00004.html#a497d37ba22797241adfb6361f61e6476" title="This is called by parse() before argp_parse() is called. " alt="" coords="1183,152,1365,193"/>
+<area shape="rect" id="node10" href="$d0/d0b/a00004.html#a13bc2299f39546454650655b9396e436" title="See documentation for ArgppBase::parse() " alt="" coords="1413,152,1596,193"/>
+<area shape="rect" id="node11" href="$d1/d7c/a00003.html#a636e133fd2c194a1794de170b8694c9b" title="This will call argp_parse() after setting up the low&#45;level arrays of options and child parsers (i..." alt="" coords="1652,130,1819,157"/>
+<area shape="rect" id="node12" href="$d0/d0b/a00004.html#ac60b34fcdd3b86d1af98da3c59cf22c5" title="See documentation for argpp::ArgppBase::rootHasNonOptionArgs() for more details. " alt="" coords="1644,181,1827,223"/>
+<area shape="rect" id="node13" href="$d1/d7c/a00003.html#a0ff8e1cadd3eda18d1cd6cf9a3480f6d" title="Tells where non&#45;option arguments entered on the command line are stored: either in the root instance..." alt="" coords="1875,181,2055,223"/>
+<area shape="rect" id="node15" href="$d1/d7c/a00003.html#a9c73f4381a2e17d077ae97ff092e5f4a" title="Returns the argv argument passed to the main() function, or NULL if the root parser hasn’t yet been ..." alt="" coords="482,222,661,249"/>
+<area shape="rect" id="node16" href="$de/d21/a00006.html#a02b3e834890ce3bf710b2ca62de53564" title="Call this function to create instances of classes derived from ArgppBase. " alt="" coords="713,239,901,266"/>
+</map>

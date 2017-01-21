@@ -1,0 +1,5 @@
+<map id="argpp::impl::ArgppBaseImpl::getRetvalErrorFromArgpParse" name="argpp::impl::ArgppBaseImpl::getRetvalErrorFromArgpParse">
+<area shape="rect" id="node2" href="$d1/d7c/a00003.html#a6c2972469897f06e388f4e8ef755d3cf" title="If parse() returns false (i.e. an error has occurred), you can fetch the actual return value from arg..." alt="" coords="259,5,449,47"/>
+<area shape="rect" id="node3" href="$d0/d0b/a00004.html#aee2677108d54909bad2fe7a2126b1e6e" title="See documentation for argpp::ArgppBase::wasHelpEntered() and for the static member variable help_call..." alt="" coords="263,71,445,112"/>
+<area shape="rect" id="node4" href="$d1/d7c/a00003.html#a494042ee5469673d747dfb1c4e0cf24b" title="Flag to let derived classes know that one of the special options &quot;&#45;&#45;help&quot;, &quot;&#45;&#45;version&quot; or &quot;&#45;&#45;usage&quot; w..." alt="" coords="497,71,683,112"/>
+</map>

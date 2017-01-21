@@ -1,0 +1,5 @@
+<map id="argpp::impl::ArgppBaseImpl::getErrorCodeFromArgp" name="argpp::impl::ArgppBaseImpl::getErrorCodeFromArgp">
+<area shape="rect" id="node2" href="$d1/d7c/a00003.html#ad35db49ec71251e5c1955eebc87aa9c5" title="This returns the error code that would typically be returned by one of the helper functions..." alt="" coords="237,5,417,47"/>
+<area shape="rect" id="node3" href="$d0/d0b/a00004.html#aee2677108d54909bad2fe7a2126b1e6e" title="See documentation for argpp::ArgppBase::wasHelpEntered() and for the static member variable help_call..." alt="" coords="236,71,419,112"/>
+<area shape="rect" id="node4" href="$d1/d7c/a00003.html#a494042ee5469673d747dfb1c4e0cf24b" title="Flag to let derived classes know that one of the special options &quot;&#45;&#45;help&quot;, &quot;&#45;&#45;version&quot; or &quot;&#45;&#45;usage&quot; w..." alt="" coords="467,71,652,112"/>
+</map>

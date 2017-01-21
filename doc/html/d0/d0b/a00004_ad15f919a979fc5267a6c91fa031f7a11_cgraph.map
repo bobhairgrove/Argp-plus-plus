@@ -1,0 +1,6 @@
+<map id="argpp::impl::ArgppBaseImpl::addChild" name="argpp::impl::ArgppBaseImpl::addChild">
+<area shape="rect" id="node2" href="$d0/d0b/a00004.html#a2840df24de2ee9af008280bcc92c4839" title="See documentation for ArgppBase::isChildOfThisParent() " alt="" coords="236,5,419,47"/>
+<area shape="rect" id="node3" href="$d0/d0b/a00004.html#a4263ddef208a5ad720c89bcb2e2a4fb7" title="Removes the child from the parent&#39;s vector of children if it is found. " alt="" coords="236,71,419,112"/>
+<area shape="rect" id="node4" href="$d1/d7c/a00003.html#aa1cf3f1ddc1ba9f78baf8fbe9381c132" title="Returns the parent of the current object as a pointer to the base class. " alt="" coords="467,78,657,105"/>
+<area shape="rect" id="node5" href="$d0/d0b/a00004.html#a2465e0dfea77d3adc2b59f9e313031cb" title="See documentation for ArgppBase::getParent() " alt="" coords="705,71,888,112"/>
+</map>

@@ -1,0 +1,10 @@
+<map id="argpp::impl::ArgppBaseImpl::addOption" name="argpp::impl::ArgppBaseImpl::addOption">
+<area shape="rect" id="node2" href="$d1/d7c/a00003.html#a28f7709d3bc05072d4aab447673c8bbf" title="Appends a single option to the vector of options. " alt="" coords="239,5,433,32"/>
+<area shape="rect" id="node3" href="$d1/d7c/a00003.html#a8207c68a8e691f5bdd74c5dbff8b3002" title="Convenience overload taking a const reference to a std::vector&lt;ArgppOption&gt; object. " alt="" coords="236,56,436,83"/>
+<area shape="rect" id="node4" href="$d0/d0b/a00004.html#a56b5c2e974486a4ea79960b3b6c6ee4a" title="Overloaded version. See documentation for ArgppBase::addOption(const argp_option &amp;ao) ..." alt="" coords="245,107,427,149"/>
+<area shape="rect" id="node5" href="$d0/d0b/a00004.html#a8adb4cf5e1039f1763107a63f4cd4329" title="See documentation for ArgppBase::addOptions() " alt="" coords="245,173,427,214"/>
+<area shape="rect" id="node7" href="$d0/d0b/a00004.html#a1b35fcd403213a6bf2dbd8079ec3e721" title="See documentation for ArgppBase::getArgv() " alt="" coords="493,231,675,273"/>
+<area shape="rect" id="node6" href="$d1/d7c/a00003.html#ab7793f58644141a9963173a345dd5284" title="Takes an array of argp_option structs. " alt="" coords="484,180,684,207"/>
+<area shape="rect" id="node8" href="$d1/d7c/a00003.html#a9c73f4381a2e17d077ae97ff092e5f4a" title="Returns the argv argument passed to the main() function, or NULL if the root parser hasn’t yet been ..." alt="" coords="732,239,911,265"/>
+<area shape="rect" id="node9" href="$de/d21/a00006.html#a02b3e834890ce3bf710b2ca62de53564" title="Call this function to create instances of classes derived from ArgppBase. " alt="" coords="959,239,1147,265"/>
+</map>

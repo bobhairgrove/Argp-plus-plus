@@ -1,0 +1,136 @@
+/**
+@mainpage Argp++
+@version 0.9.0
+@author Copyright © 2017 by Robert Hairgrove
+@date 2017-Jan-21
+
+<hr>
+
+@section Contents
+ -# @ref Intro
+ -# @ref License
+ -# @ref Platforms
+ -# @ref Interface
+ -# @ref GNUargp
+ -# @ref Contact
+
+<hr>
+@section Intro Introduction
+<p> \b Argp++ is a convenience wrapper written in C++ around the GNU C-language command line argument parser library <a href="http://www.gnu.org/software/libc/manual/html_node/Argp.html" target="_blank" style="font-weight:bold">argp</a>.</p>
+<p>What started out as a whimsical development exercise turned out to be a somewhat difficult challenge.  The GNU \b argp library sets a few hurdles for anyone wanting to use it in C++ code. The main ones are:</p>
+<ul>
+<li>\b argp likes to call \c exit() if the user enters anything unexpected, or if the options `--help` or `--usage` are entered on the command line.  This is generally not a problem for C developers since all dynamic memory allocation management must be done manually in C.  For C++ code, however, especially with any of the STL container objects such as \c std::string, dynamic memory allocations done internally by the class depend on calling the destructor at some point to properly free the resources acquired during the lifetime of the object.<br><br>Since no stack unwinding takes place when \c exit() is called, only objects with static or global scope will be destroyed normally.  This can be a problem when STL containers are used casually &mdash; which is part of the beauty of their design, that one can normally use them just like  POD types.  Therefore, using \b argp in any C++ code requires a little (actually, a LOT of) preliminary thought as to where these objects will be created and when they will be destroyed.</li>
+
+<li>In general, \b argp deals mostly with strings, so any dynamic allocations of textual content (e.g., providing run-time translations of help strings) must be done in such a way that no memory is leaked if \b argp calls \c exit() before the \c \b argp_parse() function can return. There is a way to inhibit the calling of \c exit() by \b argp ... that is, by passing the flag \c \b ARGP_NO_EXIT in the call to the \c \b argp_parse() function. A decision was made to make this the default behavior of the \b argp++ library because otherwise, some people are bound to stumble over this.
+
+To change this back to the way \b argp normally behaves, the static member function argpp::ArgppBase::allowArgpToExit() can be called. Internally, there is some code to mimic that behavior without running the risk of memory leaks, but all internal calls to the native \b argp functions are done by including the flag \b ARGP_NO_EXIT as an argument.
+
+One of the consequences or side effects of passing the \b ARGP_NO_EXIT flag to \b argp_parse() is that if the user enters "--help" or "--usage", user-defined parsers might still be called afterwards because \b argp implements all user-defined parsers as children of an internal main parser object. The special options such as "--help", etc., are handled by the internal parser and normally cause \b argp to call \c exit(), in which case none of the other parsers are called. User code should be prepared to handle this.
+
+Unfortunately, the only way I know of to determine whether a user entered one of the special options is to examine the command line yourself (in the \b argv argument to the \b main() function) and set some kind of flag which can be queried in other functions which might produce unwanted output. The best place to do this is probably in the body of the constructor of your derived class (see ARGPP_test_03 for an example). Also, for the "--help" option, users can count on \b argp calling the argpp::ArgppBase::helpFilterImpl() function (if it has been installed; see the argpp::ArgppBase::installHelpFilter() function).</li>
+
+<li>The <a href="http://www.gnu.org/software/libc/manual/html_node/Argp.html" target="_blank" style="font-weight:bold">C language user interface</a> to \b argp, although mostly well documented, is not easy to understand for someone with a mostly C++ background. At a minimum, it is inconvenient to have to deal with dozens of switch cases and learn the functions of all the different members of the "argp_state" structure.</li>
+</ul>
+<p>My goals for this library are:</p>
+<ol>
+<li>It should be easier to use than the original <a href="http://www.gnu.org/software/libc/manual/html_node/Argp.html" target="_blank" style="font-weight:bold">C language user interface</a>, at least for C++ programmers;</li>
+
+<li>It should be safe to use when used properly. The \b argp library itself is not thread-safe, so there was no attempt to make it any safer than it is (for details, please refer to the <a href="http://www.gnu.org/software/libc/manual/html_node/Argp.html" target="_blank" style="font-weight:bold">GNU documentation page for argp</a> and look for the line starting with &ldquo;Preliminary&rdquo; which comes right after the line containing the declaration of the \b argp_parse() function). But it should be safe to use with the only caveat being not to leave any non-POD objects created automatically (i.e. on the stack) lying around before the static argpp::ArgppBase::parse() function is called (which calls the \c \b argp_parse function);</li>
+
+<li>It should be more convenient to learn and use than <a href="http://www.boost.org/doc/libs/1_51_0/doc/html/program_options.html" target="_blank" style="font-weight:bold">boost::program_options</a>. Perhaps \c boost::program_options does a better job? I really don&rsquo;t know. But since I don&rsquo;t believe in re-inventing the wheel, if someone can convince me that it is done easier, quicker and better than \b argp++, I&rsquo;m all for it!
+
+Henry Ford (???) was supposed to have said once something along these lines:<br><span style="font-style:italic">&ldquo;You can have it built quickly, cheaply, and of the best quality. Pick any two!&rdquo;</span><br>
+Of course, there is no competition here on price, just on ease of learning
+(which is a kind of price because &ldquo;time is money&rdquo; :) )</li>
+
+<li>Finally, it should be very easy and intuitive to use for anyone already used to using the <a href="http://www.gnu.org/software/libc/manual/html_node/Argp.html" target="_blank" style="font-weight:bold">C interface</a> of the \b argp library.</li></ol>
+<p><a href="#">Back to top...</a></p>
+
+<hr>
+@section License License
+The \b argp++ library, like the entire <a href="http://www.gnu.org/software/libc/manual/html_node/index.html" target="_blank">GNU C library</a>, is distributed under the terms of the <a href="http://www.gnu.org/licenses/old-licenses/lgpl-2.1-standalone.html" target="_blank" title="This link leads to the entire text of the license">GNU LGPL version 2.1</a> as follows:
+
+<div style="display:block;background-color:#faebe7;margin:10px;padding:4px"><pre>
+This library is free software; you can redistribute it and/or
+modify it under the terms of the GNU Lesser General Public
+License as published by the Free Software Foundation; either
+version 2.1 of the License, or (at your option) any later version.<br>This library is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+Lesser General Public License for more details.<br>You should have received a copy of the GNU Lesser General Public
+License along with this library; if not, write to the Free Software
+Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+</pre></div>
+<p><a href="#">Back to top...</a></p>
+
+<hr>
+@section Platforms Platform Support
+
+On operating systems which use GNU glibc, the \b argp library is included by default. This is the case with practically all distributions of Linux and some Unix OS's as well.
+
+On other systems, it might be possible to use Gnulib's \b argp implementation: http://www.gnu.org/software/gnulib/ <br>Note that there are subtle differences between Gnulib and GNU glibc &mdash; for example, Gnulib has an extra option flag \b OPTION_NO_TRANS which is not defined by glibc.
+
+I found this implementation for the Microsoft® Windows® platform:<br>
+<a href="https://github.com/kbogert/madp-win/tree/master/src/argp-standalone-1.3" target="_blank">https://github.com/kbogert/madp-win/tree/master/src/argp-standalone-1.3</a>
+
+Maybe it would work with \b argp++, but it hasn&rsquo;t been tested by me (you might want to correct the bug in <a href="https://code.google.com/p/madp-win/source/browse/src/argp-standalone-1.3/strndup.c" target="_blank" style="font-style:bold">strndup.c</a> first ... look at the code in lines 23-25).
+<p><a href="#">Back to top...</a></p>
+
+<hr>
+@section Interface User Interface
+In order to better understand how GNU \b argp, and by extension \b argp++ works, I highly recommend first reading and trying the example programs found here:<br>
+<a href="http://www.nongnu.org/argpbook/" target="_blank" style="font-style:italic;font-weight:bold">&ldquo;Step-By-Step Into Argp&rdquo;</a> by Ben Asselstine (Copyright &copy; 2010, 2015)
+
+The examples in this little book are all for C-language programs; however, it is very clearly written and does a great job of explaining some things where the GNU documentation is a bit fuzzy at times.
+
+Also, there is some sample code in the <a href="https://sourceware.org/git/?p=glibc.git;a=tree;f=argp;h=64ac8097a33cc193b3e097973010fb451bffcf84;hb=HEAD" target="_blank">argp branch of the source code tree for GNU glibc</a> (look for the file \b argp-test.c and some files beginning with "tst-"). \b argp++ has been tested with these and also with the examples in the aforementioned book.
+
+If your application only needs just a few simple options with no arguments, then perhaps you would find it easier to use the native interface (or just use the GNU \b getopt library, which is much simpler but also less powerful than \b argp.)
+
+<span style="font-weight:bold;text-decoration:underline">C++ exceptions:</span>&nbsp; \b argp++ does not throw any exceptions unless any of the underlying STL container types used throw something (e.g., \c std::bad_alloc can be thrown if there is not enough memory available for allocating). Derived classes can throw exceptions if they want, but exceptions should \b never be allowed to leave any destructors (see <a href="http://www.gotw.ca/gotw/047.htm" target="_blank">GotW \#47</a>). The destructor of the root instance deletes all child objects when the global \b argpp::impl::DeleteHelper goes out of scope. Its implementation (provided by argpp::impl::ArgppBaseImpl::~ArgppBaseImpl()) uses a \c \b try ...\c \b catch block to eat any destructors that derived classes might throw during destruction.
+
+<span style="background-color:yellow">Here are the minimal steps necessary to use the \b argp++ library:</span>
+
+<ol>
+<li>Ensure that you have a working implementation of \b argp on your system. The \b argp library is a standard part of the <a href="http://www.gnu.org/software/libc/manual/html_node/index.html" target="_blank">GNU C library</a> (AKA "glibc") which is part of almost all Linux and some Unix systems by default. For Windows and Mac OS X, other libraries will probably have to be installed separately (see \ref Platforms).</li>
+
+<li>Build and install the source code for the \b argp++ library. This project uses the 
+<a href="https://www.gnu.org/software/autoconf/autoconf.html" target="_blank">GNU Autotools suite</a>
+to configure and build the package (see the README.md and INSTALL files for further infomation). 
+(IMPORTANT NOTE: the Autotools configuration in this project will only work on Linux or Unix systems, and possibly on Mac OSX. There is currently no installation setup for 
+Microsoft® Windows® (this is a big \b TODO ...)</li>
+
+<li>
+<span style="background-color:#faebd7"> \c \#include &lt;argpp.hpp&gt;</span> or <span style="background-color:#faebd7"> \c \#include "argpp.hpp"</span> 
+in your own code. This header will pull in all the other headers needed by the library. The <span style="background-color:#faebd7">configure</span> script checks for existence of the `argp.h` header and defines the symbols `HAVE_ARGP_H` and `HAVE_SYSTEM_ARGP_H` if it is found. If you are using a stand-alone version of GNU `argp`, you may need to add its directory to the preprocessor flags (see `./configure --help` for details).
+<br>
+<br>If you have built \b argp++ as a shared library, be sure that the linker can find it in your file system. The `configure` script installs the library header file `argpp.hpp` by default to `/usr/local/include` and the shared library <span style="font-weight:bold">libargp++.so</span> (together with versioned links) as well as a static library <span style="font-weight:bold">libargp++.a</span> to `/usr/local/lib`. However, as usual with GNU autoconf, you can change this by setting the "prefix" option when you run `configure`. Also, there is an option `--enable-pkgconfig` which will install the `.pc` file for later use with the `pkg-config` program. This makes it rather easy to link the library into other programs (see `"man pkg-config"` for details if you aren&rsquo;t familiar with it).<br>
+<br>Otherwise, you can simply include all of the sources in your project (in which case licensing caveats may apply; <span style="font-style:italic;background-color:#00ffff">disclaimer: I Am Not A Lawyer</span> &mdash; see the @ref License section). Of course, in order to <span style="text-decoration:underline">build</span> \b argp++ as a library, you will need to include all of the sources. Afterwards, only the single header file argpp.hpp should be necessary to use it.</li>
+
+<li>You should compile your derived classes and any applications using \b argp++ with the same settings used to build the library. If you compile it with C++11 language support, you should compile your own code with C++11 support, too. The `configure` script checks for a compiler that can support C++11 syntax and sets the appropriate compiler option automatically if available (with the GNU `g++` compiler, this would be `-std=c++11`). However, one should also be able to compile the library with older compilers.</li>
+
+<li>Derive a class of your own from argpp::ArgppBase and provide your own implementation of at least the pure virtual <i>argpp::ArgppBase::parserImpl()</i> member function. Make sure that you have a constructor which takes the command-line arguments given to your \b <i>%main(int argc, char** argv)</i> function and a pointer to a parent object (either an \c \b ArgppBase*, or NULL for the root instance) as parameters and passes these on to the base class in the initialization list for the derived class constructor. Please refer to the @ref exampl programs for samples of such classes.</li>
+
+<li>Create an instance of your derived class by calling the argpp::Factory<T>::createParser() static function with the appropriate arguments (substituting your derived class name for the \b &quot;T&quot;). It is \b important to always use the Factory class function to create instances of derived parser classes to ensure proper destruction when the program ends.</li>
+
+<li>Add the options you want to use by calling the argpp::ArgppBase::addOption() or argpp::ArgppBase::addOptions() member function of the object. You can use either the C++ option type argpp::ArgppOption or the native C struct \c \b argp_option if you want. For people who already have options in their old (???) C code set up as an array of structs and who want to try out \b argp++, it is probably easiest to just pass a pointer to the entire array to the argpp::ArgppBase::addOptions() function. Ensure that either the number of options is passed in the "len" argument, or else the last option \b must be an empty \b argp_option struct (i.e., all members are NULL or 0).</li>
+
+<li>Create additional child parsers, either of other types derived from argpp::ArgppBase, or multiple parsers of the same type as you wish. Always use the templated factory function argpp::Factory<T>::createParser() and pass in the appropriate parent, or NULL to designate the previously created root instance as the parent.</li>
+
+<li>There are global variables and options you can set which are implemented as static member functions of the base class argpp::ArgppBase. In order for these to work properly, some of the functions require that the root instance of a class derived from argpp::ArgppBase have already been created. Therefore, it makes sense to save this step until just before you call the static argpp::ArgppBase::parse() function.</li>
+
+<li>Finally, you can call the static member function argpp::ArgppBase::parse(). If parsing was successful, any parsed options can be fetched by calling the argpp::ArgppBase::getParsedOptions() and argpp::ArgppBase::getNonOptionArgs() member functions.</li>
+</ol>
+<p><a href="#">Back to top...</a></p>
+
+<hr>
+@section GNUargp Link to the GNU argp documentation page
+<a href="http://www.gnu.org/software/libc/manual/html_node/Argp.html" target="_blank">http://www.gnu.org/software/libc/manual/html_node/Argp.html</a>
+<p><a href="#">Back to top...</a></p>
+
+<hr>
+@section Contact Contact address for bugs, suggestions, etc.
+E-mail address: <b><i>code \<at\> roberthairgrove \<dot\> com</i></b>.
+<br>Project URL: https://github.com/bobhairgrove/Argp-plus-plus
+<p><a href="#">Back to top...</a></p>
+*/

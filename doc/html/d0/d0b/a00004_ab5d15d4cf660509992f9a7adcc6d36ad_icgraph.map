@@ -1,0 +1,6 @@
+<map id="argpp::impl::ArgppBaseImpl::installArgppRootInstance" name="argpp::impl::ArgppBaseImpl::installArgppRootInstance">
+<area shape="rect" id="node2" href="$d1/d7c/a00003.html#a72f107ba1447b026b749ac4f3c68a431" title="Called by the argpp::Factory&lt;T&gt;::createParser() function when the first (root) instance is created..." alt="" coords="243,5,411,47"/>
+<area shape="rect" id="node4" href="$d0/d0b/a00004.html#ac60b34fcdd3b86d1af98da3c59cf22c5" title="See documentation for argpp::ArgppBase::rootHasNonOptionArgs() for more details. " alt="" coords="236,71,419,112"/>
+<area shape="rect" id="node3" href="$de/d21/a00006.html#a02b3e834890ce3bf710b2ca62de53564" title="Call this function to create instances of classes derived from ArgppBase. " alt="" coords="467,13,655,39"/>
+<area shape="rect" id="node5" href="$d1/d7c/a00003.html#a0ff8e1cadd3eda18d1cd6cf9a3480f6d" title="Tells where non&#45;option arguments entered on the command line are stored: either in the root instance..." alt="" coords="471,71,651,112"/>
+</map>
