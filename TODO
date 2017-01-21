@@ -1,8 +1,9 @@
 TODO: Argp++
 
 1.  `make dist` works, but `make distcheck` gives an error about `*.Po` files
-    left behind after `make distclean` runs. This should be fixed, although
-    I'm not sure how, given the way `make examples` currently works.
+    left behind in the `examples` subfolders after `make distclean` runs. 
+    This should be fixed, although I'm not sure how, given the way 
+    `make examples` currently works.
 
 2.  Get this to build on Microsoft Windows and Mac OSX platforms.
 
