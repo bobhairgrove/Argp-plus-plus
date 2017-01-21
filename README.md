@@ -81,7 +81,7 @@ The header `argpp.hpp` has macros in place which will discover how
 the code is being compiled. If **C++11** support is available, it will 
 be used by default. In particular, `std::unique_ptr<T>` is used to hold
 a pointer to the root parser instance in a global variable. If C++11 is
-**not** available, a substitute `deleteHelper` class is used instead. 
+**not** available, a substitute `DeleteHelper` class is used instead. 
 Otherwise, none of the more advanced C++11 syntax is used in order to
 make it possible to compile the code on older platforms (but hopefully
 not TOO old...)
