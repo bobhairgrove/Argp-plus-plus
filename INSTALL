@@ -7,7 +7,7 @@ the availability of the `argp.h` header file and either the usual system
 libraries contained in the platform's C library implementation on
 Linux/Unix systems, or else the libraries or additional sources of some
 stand-alone version of GNU argp. You might be able to use it on Windows systems,
-either through the MSys/Cygwin envoronment or by supplying some suitable
+either through the MSys/Cygwin environment, or by supplying some suitable
 replacement package.
 
 You can choose to merely add the sources directly into your own project,
@@ -32,34 +32,34 @@ using the typical GNU Autotools `configure` script:
    you@yourcomputer:~$ cd <install_dir>
 
 4. In the terminal, enter the following commands:
-		you@yourcomputer:~$ ./configure
-		you@yourcomputer:~$ make
+    you@yourcomputer:~$ ./configure
+    you@yourcomputer:~$ make
 
-		To build the demo programs in the `example` subfolder:
-		you@yourcomputer:~$ make examples
+    To build the demo programs in the `example` subfolder:
+    you@yourcomputer:~$ make examples
 
-		To install the library to /usr/local/lib (or wherever `prefix` points to;
-		please refer to `./configure --help` for changing that):
-		you@yourcomputer:~$ sudo make install
+    To install the library to /usr/local/lib (or wherever `prefix` points to;
+    please refer to `./configure --help` for changing that):
+    you@yourcomputer:~$ sudo make install
 
-		The command `sudo` is typical for Debian or Debian-based systems such as 
-		Ubuntu (Mac OSX also has `sudo`). For other Linux/Unix systems, one would 
-		change to a superuser (e.g. root) and then merely type `make install`. 
-		You can also just type `make install` as long as the current user doing the 
-		installation has the necessary file system privileges to create and delete 
-		files in the destination folder.
+    The command `sudo` is typical for Debian or Debian-based systems such as 
+    Ubuntu (Mac OSX also has `sudo`). For other Linux/Unix systems, one would 
+    change to a superuser (e.g. root) and then merely type `make install`. 
+    You can also just type `make install` as long as the current user doing the 
+    installation has the necessary file system privileges to create and delete 
+    files in the destination folder.
 
-		This should build the library as `libargp++.so.<...version...>` 
-		and install it together with the usual symlinks by default into 
-		`/usr/local/lib`. The C++ header file `argpp.hpp` is installed by default 
-		in `/usr/local/include` (or wherever `prefix` points to, see above).
+    This should build the library as `libargp++.so.<...version...>` 
+    and install it together with the usual symlinks by default into 
+    `/usr/local/lib`. The C++ header file `argpp.hpp` is installed by default 
+    in `/usr/local/include` (or wherever `prefix` points to, see above).
 
 5. C++11 support:
-		Argp++ enables C++11 compiler support if it is available, but actually only
-		in order to use `std::unique_ptr<T>`. If C++11 support is not available,
-		the library uses a smart pointer implementation similar to that (but
-		not `std::auto_ptr`, however). There should therefore be no problem in
-		building Argp++ with somewhat older (but not ancient) compilers.
+    Argp++ enables C++11 compiler support if it is available, but actually only
+    in order to use `std::unique_ptr<T>`. If C++11 support is not available,
+    the library uses a smart pointer implementation similar to that (but
+    not `std::auto_ptr`, however). There should therefore be no problem in
+    building Argp++ with somewhat older (but not ancient) compilers.
 
 6. Symbols that might need to be defined:
     In `argpp.hpp` there is an `#if...#else` macro to include either 
@@ -82,12 +82,12 @@ using the typical GNU Autotools `configure` script:
     available command-line options).
 
 7. pkg-config:
-   Users who wish to create a .pc file for use with the `pkg-config`
-   utility can do so by running the `configure` script with the
-   `--enable-pkgconfig` option. It will be installed in the `pkgconfig`
-   subdirectory of `/usr/local/lib` (or wherever `prefix` points to).
-   It will be named `Argp++.pc`. See `man pkg-config` for details on how
-   it is used.
+    Users who wish to create a .pc file for use with the `pkg-config`
+    utility can do so by running the `configure` script with the
+    `--enable-pkgconfig` option. It will be installed in the `pkgconfig`
+    subdirectory of `/usr/local/lib` (or wherever `prefix` points to).
+    It will be named `Argp++.pc`. See `man pkg-config` for details on how
+    it is used.
 
 ------------------------------------------------
 B. Installation on Microsoft Windows platforms:
