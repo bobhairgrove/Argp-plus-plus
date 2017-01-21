@@ -1,29 +1,29 @@
 ## Argp++:
 
-    A C++ class library wrapper around the GNU C-language **argp** options 
-    parsing utility for command-line programs. The GNU documentation for 
-    the native _argp_ library is available here:
+A C++ class library wrapper around the GNU C-language **argp** options 
+parsing utility for command-line programs. The GNU documentation for 
+the native _argp_ library is available here:
 
-    https://www.gnu.org/software/libc/manual/html_node/Argp.html
+https://www.gnu.org/software/libc/manual/html_node/Argp.html
 
 ### Introduction:
 
-    For an excellent introduction to using GNU _argp_ in programs written
-    in C, please read:
+For an excellent introduction to using GNU _argp_ in programs written
+in C, please read:
     
-        **"Step-by-Step into Argp"**
-        (Copyright (c) 2010, 2015 by Ben Asselstine) 
+**"Step-by-Step into Argp"**
+(Copyright (c) 2010, 2015 by Ben Asselstine) 
 
-    which you can find here: http://www.nongnu.org/argpbook/
+which you can find here: http://www.nongnu.org/argpbook/
 
-    The **source code** in this package consists of four C++ files:
-      * include/argpp.hpp
-      * include/argppbaseimpl.hpp
-      * src/argpp.cpp
-      * src/argppbaseimpl.cpp
+The **source code** in this package consists of four C++ files:
+* include/argpp.hpp
+* include/argppbaseimpl.hpp
+* src/argpp.cpp
+* src/argppbaseimpl.cpp
 
-    There is a dependency on the header `argp.h`, otherwise no additional
-    libraries are necessary to use the code.
+There is a dependency on the header `argp.h`, otherwise no additional
+libraries are necessary to use the code.
     
 ### Installation:
 
