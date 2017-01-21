@@ -12,7 +12,7 @@ For an excellent introduction to using GNU _argp_ in programs written
 in C, please read:
     
 **"Step-by-Step into Argp"**
-(Copyright (c) 2010, 2015 by Ben Asselstine) 
+(Copyright © 2010, 2015 by Ben Asselstine) 
 
 which you can find here: http://www.nongnu.org/argpbook/
 
