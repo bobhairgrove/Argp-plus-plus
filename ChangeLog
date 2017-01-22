@@ -1,3 +1,19 @@
+2017-01-22  Robert Hairgrove  <code@roberthairgrove.com>
+
+  * argpp::Factory<T>::createParser now takes an additional argument:
+      static T* createParser(  ArgppOptions const &opts = ArgppOptions()
+                             , ArgppBase * parent = NULL)
+    with a default value of an empty option vector. This makes it easier to 
+    initialize the options with literal vector initialization syntax using C++11 
+    or later.
+    Thanks to Ben Asselstine for this suggestion!
+  
+  * removed the symbol ARGPP_API from the templated struct argpp::Factory<T>
+    since it would not be an exported symbol when building a DLL in 
+    Microsoft Windows.
+    
+  * updated documentation in the doc subfolder to reflect these changes.
+
 2017-01-04  Robert Hairgrove  <code@roberthairgrove.com>
 
   * Argp++ version 0.9.0: Initial release.

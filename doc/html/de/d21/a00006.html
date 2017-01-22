@@ -129,23 +129,23 @@ $(document).ready(function(){initNavTree('de/d21/a00006.html','../../');});
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a02b3e834890ce3bf710b2ca62de53564"><td class="memItemLeft" align="right" valign="top">static T *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d21/a00006.html#a02b3e834890ce3bf710b2ca62de53564">createParser</a> (int cargc, char **vargv, <a class="el" href="../../d1/d7c/a00003.html">ArgppBase</a> *parent=NULL)</td></tr>
-<tr class="memdesc:a02b3e834890ce3bf710b2ca62de53564"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call this function to create instances of classes derived from <a class="el" href="../../d1/d7c/a00003.html" title="The ArgppBase class. ">ArgppBase</a>.  <a href="#a02b3e834890ce3bf710b2ca62de53564">More...</a><br /></td></tr>
-<tr class="separator:a02b3e834890ce3bf710b2ca62de53564"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a876294eaad23c7ec0fd30b2cbc0792f3"><td class="memItemLeft" align="right" valign="top">static T *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d21/a00006.html#a876294eaad23c7ec0fd30b2cbc0792f3">createParser</a> (<a class="el" href="../../d1/d7c/a00003.html">ArgppBase</a> *parent=NULL)</td></tr>
-<tr class="memdesc:a876294eaad23c7ec0fd30b2cbc0792f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is an overloaded version which uses the argc/argv data aleady stored as static data after the root instance has been created.  <a href="#a876294eaad23c7ec0fd30b2cbc0792f3">More...</a><br /></td></tr>
-<tr class="separator:a876294eaad23c7ec0fd30b2cbc0792f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4ea55ced81ec59e9eb905d1d7ff50f9"><td class="memItemLeft" align="right" valign="top">static T *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d21/a00006.html#ae4ea55ced81ec59e9eb905d1d7ff50f9">createParser</a> (int cargc, char **vargv, <a class="el" href="../../d2/de7/a00014.html#a160acd8adf776c633e0ff8632293f8a4">ArgppOptions</a> const &amp;opts=<a class="el" href="../../d2/de7/a00014.html#a160acd8adf776c633e0ff8632293f8a4">ArgppOptions</a>(), <a class="el" href="../../d1/d7c/a00003.html">ArgppBase</a> *parent=NULL)</td></tr>
+<tr class="memdesc:ae4ea55ced81ec59e9eb905d1d7ff50f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call this function to create instances of classes derived from <a class="el" href="../../d1/d7c/a00003.html" title="The ArgppBase class. ">ArgppBase</a>.  <a href="#ae4ea55ced81ec59e9eb905d1d7ff50f9">More...</a><br /></td></tr>
+<tr class="separator:ae4ea55ced81ec59e9eb905d1d7ff50f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95aeb433976b531038767e031053e1a2"><td class="memItemLeft" align="right" valign="top">static T *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d21/a00006.html#a95aeb433976b531038767e031053e1a2">createParser</a> (<a class="el" href="../../d2/de7/a00014.html#a160acd8adf776c633e0ff8632293f8a4">ArgppOptions</a> const &amp;opts=<a class="el" href="../../d2/de7/a00014.html#a160acd8adf776c633e0ff8632293f8a4">ArgppOptions</a>(), <a class="el" href="../../d1/d7c/a00003.html">ArgppBase</a> *parent=NULL)</td></tr>
+<tr class="memdesc:a95aeb433976b531038767e031053e1a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is an overloaded version which uses the argc/argv data aleady stored as static data after the root instance has been created.  <a href="#a95aeb433976b531038767e031053e1a2">More...</a><br /></td></tr>
+<tr class="separator:a95aeb433976b531038767e031053e1a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h3>template&lt;class T&gt;<br />
 struct argpp::Factory&lt; T &gt;</h3>
 
 <p>Implements an abstract factory for creating instances of derived parser classes. </p>
-<p>All instances of derived classes should use the <a class="el" href="../../de/d21/a00006.html#a02b3e834890ce3bf710b2ca62de53564" title="Call this function to create instances of classes derived from ArgppBase. ">createParser()</a> function for creation of parsers. If parent == NULL, the root instance becomes the parent. If there is no root instance yet, the newly created object becomes the root instance. </p>
+<p>All instances of derived classes should use the <a class="el" href="../../de/d21/a00006.html#ae4ea55ced81ec59e9eb905d1d7ff50f9" title="Call this function to create instances of classes derived from ArgppBase. ">createParser()</a> function for creation of parsers. If parent == NULL, the root instance becomes the parent. If there is no root instance yet, the newly created object becomes the root instance. </p>
 
 <p>Definition at line <a class="el" href="../../da/da0/a00009_source.html#l01094">1094</a> of file <a class="el" href="../../da/da0/a00009_source.html">argpp.hpp</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a02b3e834890ce3bf710b2ca62de53564"></a>
+<a class="anchor" id="ae4ea55ced81ec59e9eb905d1d7ff50f9"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -169,6 +169,12 @@ template&lt;class T &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="../../d2/de7/a00014.html#a160acd8adf776c633e0ff8632293f8a4">ArgppOptions</a> const &amp;&#160;</td>
+          <td class="paramname"><em>opts</em> = <code><a class="el" href="../../d2/de7/a00014.html#a160acd8adf776c633e0ff8632293f8a4">ArgppOptions</a>()</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype"><a class="el" href="../../d1/d7c/a00003.html">ArgppBase</a> *&#160;</td>
           <td class="paramname"><em>parent</em> = <code>NULL</code>&#160;</td>
         </tr>
@@ -186,25 +192,26 @@ template&lt;class T &gt; </div>
 </div><div class="memdoc">
 
 <p>Call this function to create instances of classes derived from <a class="el" href="../../d1/d7c/a00003.html" title="The ArgppBase class. ">ArgppBase</a>. </p>
-<p>Sanity checking on the parent is done by calling <a class="el" href="../../d1/d7c/a00003.html#a613661e08c784a4d4cd9e52cca365b29" title="Checks the pointer against all of the registered children in the root instance&#39;s tree of child object...">ArgppBase::isParentValid()</a>. If this fails, <a class="el" href="../../de/d21/a00006.html#a02b3e834890ce3bf710b2ca62de53564" title="Call this function to create instances of classes derived from ArgppBase. ">createParser()</a> returns NULL. Any exceptions thrown by the constructor of the template parameter type T are not caught, but instead are allowed to propagate back to the caller. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Sanity checking on the parent is done by calling <a class="el" href="../../d1/d7c/a00003.html#a613661e08c784a4d4cd9e52cca365b29" title="Checks the pointer against all of the registered children in the root instance&#39;s tree of child object...">ArgppBase::isParentValid()</a>. If this fails, <a class="el" href="../../de/d21/a00006.html#ae4ea55ced81ec59e9eb905d1d7ff50f9" title="Call this function to create instances of classes derived from ArgppBase. ">createParser()</a> returns NULL. Any exceptions thrown by the constructor of the template parameter type T are not caught, but instead are allowed to propagate back to the caller. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">cargc</td><td>: the count of command line arguments passed to main() </td></tr>
     <tr><td class="paramname">vargv</td><td>: the vector of command line arguments passed to main() </td></tr>
+    <tr><td class="paramname">opts</td><td>: a std::vector of <a class="el" href="../../dd/dad/a00005.html" title="A wrapper around argp_option. ">ArgppOption</a> objects. It is not necessary to add an empty element at the end of the vector; the library manages this when argp_parse() is called. </td></tr>
     <tr><td class="paramname">parent</td><td>: the parent object, or NULL </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A pointer to the template parameter T (i.e., the derived class) if successful, otherwise NULL. </dd></dl>
 
-<p>Definition at line <a class="el" href="../../da/da0/a00009_source.html#l01111">1111</a> of file <a class="el" href="../../da/da0/a00009_source.html">argpp.hpp</a>.</p>
+<p>Definition at line <a class="el" href="../../da/da0/a00009_source.html#l01114">1114</a> of file <a class="el" href="../../da/da0/a00009_source.html">argpp.hpp</a>.</p>
 
 <p><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="../../closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="../../de/d21/a00006_a02b3e834890ce3bf710b2ca62de53564_cgraph.png" border="0" usemap="#de/d21/a00006_a02b3e834890ce3bf710b2ca62de53564_cgraph" alt=""/></div>
-<map name="de/d21/a00006_a02b3e834890ce3bf710b2ca62de53564_cgraph" id="de/d21/a00006_a02b3e834890ce3bf710b2ca62de53564_cgraph">
+<div class="center"><img src="../../de/d21/a00006_ae4ea55ced81ec59e9eb905d1d7ff50f9_cgraph.png" border="0" usemap="#de/d21/a00006_ae4ea55ced81ec59e9eb905d1d7ff50f9_cgraph" alt=""/></div>
+<map name="de/d21/a00006_ae4ea55ced81ec59e9eb905d1d7ff50f9_cgraph" id="de/d21/a00006_ae4ea55ced81ec59e9eb905d1d7ff50f9_cgraph">
 <area shape="rect" id="node2" href="../../d1/d7c/a00003.html#af58f4baf37b3e6b771d0926f482f9b15" title="Returns a pointer to the initially created parser, or NULL if there isn&#39;t any. " alt="" coords="704,409,884,451"/>
 <area shape="rect" id="node4" href="../../d1/d7c/a00003.html#a613661e08c784a4d4cd9e52cca365b29" title="Checks the pointer against all of the registered children in the root instance&#39;s tree of child object..." alt="" coords="241,439,424,480"/>
 <area shape="rect" id="node9" href="../../d1/d7c/a00003.html#a5544f0335f6ce883c1a63c927aefa7e0" title="Returns the argc argument passed to the main() function, or 0 if the root parser hasn’t yet been cre..." alt="" coords="243,507,422,534"/>
@@ -236,7 +243,7 @@ template&lt;class T &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a876294eaad23c7ec0fd30b2cbc0792f3"></a>
+<a class="anchor" id="a95aeb433976b531038767e031053e1a2"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -248,9 +255,19 @@ template&lt;class T &gt; </div>
         <tr>
           <td class="memname">static T* <a class="el" href="../../de/d21/a00006.html">argpp::Factory</a>&lt; T &gt;::createParser </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../d1/d7c/a00003.html">ArgppBase</a> *&#160;</td>
-          <td class="paramname"><em>parent</em> = <code>NULL</code></td><td>)</td>
+          <td class="paramtype"><a class="el" href="../../d2/de7/a00014.html#a160acd8adf776c633e0ff8632293f8a4">ArgppOptions</a> const &amp;&#160;</td>
+          <td class="paramname"><em>opts</em> = <code><a class="el" href="../../d2/de7/a00014.html#a160acd8adf776c633e0ff8632293f8a4">ArgppOptions</a>()</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/d7c/a00003.html">ArgppBase</a> *&#160;</td>
+          <td class="paramname"><em>parent</em> = <code>NULL</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -263,21 +280,22 @@ template&lt;class T &gt; </div>
 <p>This is an overloaded version which uses the argc/argv data aleady stored as static data after the root instance has been created. </p>
 <p>Intended as a convenience for derived classes since the root instance already has these. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">parent</td><td>: See documentation for createParser(int cargc, char **vargv, ArgppBase* parent) </td></tr>
+    <tr><td class="paramname">opts</td><td>: see documentation for the first <a class="el" href="../../de/d21/a00006.html#ae4ea55ced81ec59e9eb905d1d7ff50f9" title="Call this function to create instances of classes derived from ArgppBase. ">createParser()</a> function. </td></tr>
+    <tr><td class="paramname">parent</td><td>: see documentation for the first <a class="el" href="../../de/d21/a00006.html#ae4ea55ced81ec59e9eb905d1d7ff50f9" title="Call this function to create instances of classes derived from ArgppBase. ">createParser()</a> function. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A pointer to the newly created type T, or NULL if there was no root instance. </dd></dl>
 
-<p>Definition at line <a class="el" href="../../da/da0/a00009_source.html#l01165">1165</a> of file <a class="el" href="../../da/da0/a00009_source.html">argpp.hpp</a>.</p>
+<p>Definition at line <a class="el" href="../../da/da0/a00009_source.html#l01172">1172</a> of file <a class="el" href="../../da/da0/a00009_source.html">argpp.hpp</a>.</p>
 
 <p><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="../../closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="../../de/d21/a00006_a876294eaad23c7ec0fd30b2cbc0792f3_cgraph.png" border="0" usemap="#de/d21/a00006_a876294eaad23c7ec0fd30b2cbc0792f3_cgraph" alt=""/></div>
-<map name="de/d21/a00006_a876294eaad23c7ec0fd30b2cbc0792f3_cgraph" id="de/d21/a00006_a876294eaad23c7ec0fd30b2cbc0792f3_cgraph">
+<div class="center"><img src="../../de/d21/a00006_a95aeb433976b531038767e031053e1a2_cgraph.png" border="0" usemap="#de/d21/a00006_a95aeb433976b531038767e031053e1a2_cgraph" alt=""/></div>
+<map name="de/d21/a00006_a95aeb433976b531038767e031053e1a2_cgraph" id="de/d21/a00006_a95aeb433976b531038767e031053e1a2_cgraph">
 <area shape="rect" id="node2" href="../../d1/d7c/a00003.html#af58f4baf37b3e6b771d0926f482f9b15" title="Returns a pointer to the initially created parser, or NULL if there isn&#39;t any. " alt="" coords="469,5,649,47"/>
 <area shape="rect" id="node4" href="../../d1/d7c/a00003.html#a5544f0335f6ce883c1a63c927aefa7e0" title="Returns the argc argument passed to the main() function, or 0 if the root parser hasn’t yet been cre..." alt="" coords="241,93,420,119"/>
 <area shape="rect" id="node6" href="../../d1/d7c/a00003.html#a9c73f4381a2e17d077ae97ff092e5f4a" title="Returns the argv argument passed to the main() function, or NULL if the root parser hasn’t yet been ..." alt="" coords="241,181,420,207"/>
@@ -312,7 +330,7 @@ template&lt;class T &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d2/de7/a00014.html">argpp</a></li><li class="navelem"><a class="el" href="../../de/d21/a00006.html">Factory</a></li>
-    <li class="footer">Generated on Sat Jan 21 2017 15:50:39 for Argp++ by
+    <li class="footer">Generated on Sun Jan 22 2017 12:39:37 for Argp++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

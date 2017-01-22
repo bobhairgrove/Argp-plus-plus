@@ -1091,7 +1091,7 @@ namespace argpp {
   /// the newly created object becomes the root instance.
   ///
   template<class T>
-  struct ARGPP_API Factory {
+  struct Factory {
       ///
       /// @brief Call this function to create instances of classes
       /// derived from ArgppBase.
@@ -1103,6 +1103,9 @@ namespace argpp {
       /// are allowed to propagate back to the caller.
       /// @param cargc : the count of command line arguments passed to main()
       /// @param vargv : the vector of command line arguments passed to main()
+      /// @param  opts : a std::vector of ArgppOption objects. It is not
+      /// necessary to add an empty element at the end of the vector; the
+      /// library manages this when argp_parse() is called.
       /// @param parent : the parent object, or NULL
       /// @return A pointer to the template parameter T
       /// (i.e., the derived class) if successful,
@@ -1110,6 +1113,8 @@ namespace argpp {
       ///
       static T* createParser( int        cargc
                               , char**     vargv
+                              , ArgppOptions const &opts
+                                 = ArgppOptions()
                               , ArgppBase* parent = NULL)
       {
         ArgppBase* argpp_root = ArgppBase::getRootInstance();
@@ -1145,6 +1150,8 @@ namespace argpp {
             retval = pObj;
           }
         }
+        if (retval && !opts.empty())
+          retval->addOptions(opts);
         return retval;
       }
       //-----------------------------------------------------------------------
@@ -1158,17 +1165,19 @@ namespace argpp {
       /// stored as static data after the root instance has been created.
       /// @details Intended as a convenience for derived classes since the root
       /// instance already has these.
-      /// @param parent : See documentation for createParser(int cargc,
-      /// char **vargv, ArgppBase* parent)
+      /// @param opts   : see documentation for the first createParser() function.
+      /// @param parent : see documentation for the first createParser() function.
       /// @return A pointer to the newly created type T, or NULL if there was no root instance.
       ///
-      static T* createParser(ArgppBase * parent = NULL)
+      static T* createParser(  ArgppOptions const &opts = ArgppOptions()
+                             , ArgppBase * parent = NULL)
       {
         ArgppBase* root = ArgppBase::getRootInstance();
         if (root) {
           return createParser(ArgppBase::getArgc()
-                              , ArgppBase::getArgv()
-                              , parent);
+                            , ArgppBase::getArgv()
+                            , opts
+                            , parent);
         }
         return NULL;
       }

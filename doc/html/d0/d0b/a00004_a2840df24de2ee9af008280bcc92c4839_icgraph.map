@@ -7,7 +7,7 @@
 <area shape="rect" id="node6" href="$d0/d0b/a00004.html#a1b35fcd403213a6bf2dbd8079ec3e721" title="See documentation for ArgppBase::getArgv() " alt="" coords="468,71,651,112"/>
 <area shape="rect" id="node5" href="$d1/d7c/a00003.html#a80376ac7b37ef428f39d784555f0b175" title="This is the only base class constructor available to derived classes. " alt="" coords="700,19,899,46"/>
 <area shape="rect" id="node7" href="$d1/d7c/a00003.html#a9c73f4381a2e17d077ae97ff092e5f4a" title="Returns the argv argument passed to the main() function, or NULL if the root parser hasn’t yet been ..." alt="" coords="949,69,1127,95"/>
-<area shape="rect" id="node8" href="$de/d21/a00006.html#a02b3e834890ce3bf710b2ca62de53564" title="Call this function to create instances of classes derived from ArgppBase. " alt="" coords="1177,98,1365,125"/>
+<area shape="rect" id="node8" href="$de/d21/a00006.html#ae4ea55ced81ec59e9eb905d1d7ff50f9" title="Call this function to create instances of classes derived from ArgppBase. " alt="" coords="1177,98,1365,125"/>
 <area shape="rect" id="node10" href="$d1/d7c/a00003.html#a80145bb4daf34ed7b6d3a3fa5da0027e" title="Returns true if the child is anywhere in the tree of children of the current object. " alt="" coords="470,136,649,177"/>
 <area shape="rect" id="node11" href="$d0/d0b/a00004.html#aa24846358fa355435cc48d42084931ba" title="See documentation for ArgppBase::isParentValid(). " alt="" coords="708,136,891,177"/>
 <area shape="rect" id="node12" href="$d1/d7c/a00003.html#a613661e08c784a4d4cd9e52cca365b29" title="Checks the pointer against all of the registered children in the root instance&#39;s tree of child object..." alt="" coords="947,120,1129,161"/>

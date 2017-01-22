@@ -251,7 +251,7 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memdesc:a613661e08c784a4d4cd9e52cca365b29"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks the pointer against all of the registered children in the root instance's tree of child objects.  <a href="#a613661e08c784a4d4cd9e52cca365b29">More...</a><br /></td></tr>
 <tr class="separator:a613661e08c784a4d4cd9e52cca365b29"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a72f107ba1447b026b749ac4f3c68a431"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d7c/a00003.html#a72f107ba1447b026b749ac4f3c68a431">installArgppRootInstance</a> (<a class="el" href="../../d1/d7c/a00003.html">ArgppBase</a> *pInstance)</td></tr>
-<tr class="memdesc:a72f107ba1447b026b749ac4f3c68a431"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called by the <a class="el" href="../../de/d21/a00006.html#a02b3e834890ce3bf710b2ca62de53564" title="Call this function to create instances of classes derived from ArgppBase. ">argpp::Factory&lt;T&gt;::createParser()</a> function when the first (root) instance is created. Subsequent calls do not do anything.  <a href="#a72f107ba1447b026b749ac4f3c68a431">More...</a><br /></td></tr>
+<tr class="memdesc:a72f107ba1447b026b749ac4f3c68a431"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called by the <a class="el" href="../../de/d21/a00006.html#ae4ea55ced81ec59e9eb905d1d7ff50f9" title="Call this function to create instances of classes derived from ArgppBase. ">argpp::Factory&lt;T&gt;::createParser()</a> function when the first (root) instance is created. Subsequent calls do not do anything.  <a href="#a72f107ba1447b026b749ac4f3c68a431">More...</a><br /></td></tr>
 <tr class="separator:a72f107ba1447b026b749ac4f3c68a431"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab2d114a85b5e4f3120e27bf042443252"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d7c/a00003.html#ab2d114a85b5e4f3120e27bf042443252">installBugAddress</a> (const std::string &amp;ba)</td></tr>
 <tr class="memdesc:ab2d114a85b5e4f3120e27bf042443252"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the global variable <b>argp_program_bug_address</b>.  <a href="#ab2d114a85b5e4f3120e27bf042443252">More...</a><br /></td></tr>
@@ -374,7 +374,7 @@ Friends</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The <a class="el" href="../../d1/d7c/a00003.html" title="The ArgppBase class. ">ArgppBase</a> class. </p>
-<p>Derive your own class from this base class and create instances by calling the <a class="el" href="../../de/d21/a00006.html#a02b3e834890ce3bf710b2ca62de53564" title="Call this function to create instances of classes derived from ArgppBase. ">argpp::Factory&lt;T&gt;::createParser()</a> function (replacing the "T" with your own class name). </p>
+<p>Derive your own class from this base class and create instances by calling the <a class="el" href="../../de/d21/a00006.html#ae4ea55ced81ec59e9eb905d1d7ff50f9" title="Call this function to create instances of classes derived from ArgppBase. ">argpp::Factory&lt;T&gt;::createParser()</a> function (replacing the "T" with your own class name). </p>
 
 <p>Definition at line <a class="el" href="../../da/da0/a00009_source.html#l00415">415</a> of file <a class="el" href="../../da/da0/a00009_source.html">argpp.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
@@ -451,7 +451,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>The destructor of <a class="el" href="../../d1/d7c/a00003.html" title="The ArgppBase class. ">ArgppBase</a> is protected. </p>
-<p>Derived classes should NOT be created automatically, i.e. on the stack. ONLY use the <a class="el" href="../../de/d21/a00006.html#a02b3e834890ce3bf710b2ca62de53564" title="Call this function to create instances of classes derived from ArgppBase. ">argpp::Factory&lt;T&gt;::createParser()</a> function to create parser instances. This way ensures that the hierarchy from the singleton root instance with any children parsers is implemented correctly.</p>
+<p>Derived classes should NOT be created automatically, i.e. on the stack. ONLY use the <a class="el" href="../../de/d21/a00006.html#ae4ea55ced81ec59e9eb905d1d7ff50f9" title="Call this function to create instances of classes derived from ArgppBase. ">argpp::Factory&lt;T&gt;::createParser()</a> function to create parser instances. This way ensures that the hierarchy from the singleton root instance with any children parsers is implemented correctly.</p>
 <p>Declaring the base class destructor protected does not prohibit derived classes from creating objects on the stack. The base class is abstract anyway, so instances cannot be created directly. Unfortunately, it is not feasible to try to prevent derived classes from creating their objects on the stack (cf. Scott Meyers, Item 27 of &ldquo;More Effective C++&rdquo; Addison-Wesley, ISBN 0-201-63371-X), and it probably wouldn&rsquo;t be worth the effort for this application, anyway (although it might be a good idea). </p>
 
 <p>Definition at line <a class="el" href="../../d4/dee/a00008_source.html#l00146">146</a> of file <a class="el" href="../../d4/dee/a00008_source.html">argpp.cpp</a>.</p>
@@ -1595,7 +1595,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Returns the <b>argc</b> argument passed to the <code>main()</code> function, or 0 if the root parser hasn&rsquo;t yet been created. </p>
-<p>Once the root instance has been created, the same argc and argv data is used for all the rest of the parsers. Subsequent (child) parsers can be created without passing the data for each object. The <a class="el" href="../../de/d21/a00006.html#a02b3e834890ce3bf710b2ca62de53564" title="Call this function to create instances of classes derived from ArgppBase. ">argpp::Factory&lt;T&gt;::createParser()</a> function needs access to the data, therefore these are publicly accessible. </p>
+<p>Once the root instance has been created, the same argc and argv data is used for all the rest of the parsers. Subsequent (child) parsers can be created without passing the data for each object. The <a class="el" href="../../de/d21/a00006.html#ae4ea55ced81ec59e9eb905d1d7ff50f9" title="Call this function to create instances of classes derived from ArgppBase. ">argpp::Factory&lt;T&gt;::createParser()</a> function needs access to the data, therefore these are publicly accessible. </p>
 
 <p>Definition at line <a class="el" href="../../d4/dee/a00008_source.html#l00343">343</a> of file <a class="el" href="../../d4/dee/a00008_source.html">argpp.cpp</a>.</p>
 
@@ -1618,7 +1618,7 @@ Friends</h2></td></tr>
 <div id="dynsection-25-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="../../d1/d7c/a00003_a5544f0335f6ce883c1a63c927aefa7e0_icgraph.png" border="0" usemap="#d1/d7c/a00003_a5544f0335f6ce883c1a63c927aefa7e0_icgraph" alt=""/></div>
 <map name="d1/d7c/a00003_a5544f0335f6ce883c1a63c927aefa7e0_icgraph" id="d1/d7c/a00003_a5544f0335f6ce883c1a63c927aefa7e0_icgraph">
-<area shape="rect" id="node2" href="../../de/d21/a00006.html#a02b3e834890ce3bf710b2ca62de53564" title="Call this function to create instances of classes derived from ArgppBase. " alt="" coords="232,5,420,32"/>
+<area shape="rect" id="node2" href="../../de/d21/a00006.html#ae4ea55ced81ec59e9eb905d1d7ff50f9" title="Call this function to create instances of classes derived from ArgppBase. " alt="" coords="232,5,420,32"/>
 </map>
 </div>
 </p>
@@ -1647,7 +1647,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Returns the <b>argv</b> argument passed to the <code>main()</code> function, or NULL if the root parser hasn&rsquo;t yet been created. </p>
-<p>Once the root instance has been created, the same argc and argv data is used for all the rest of the parsers. Subsequent (child) parsers can be created without passing the data for each object. The <a class="el" href="../../de/d21/a00006.html#a02b3e834890ce3bf710b2ca62de53564" title="Call this function to create instances of classes derived from ArgppBase. ">argpp::Factory&lt;T&gt;::createParser()</a> function needs access to the data, therefore these are publicly accessible. </p>
+<p>Once the root instance has been created, the same argc and argv data is used for all the rest of the parsers. Subsequent (child) parsers can be created without passing the data for each object. The <a class="el" href="../../de/d21/a00006.html#ae4ea55ced81ec59e9eb905d1d7ff50f9" title="Call this function to create instances of classes derived from ArgppBase. ">argpp::Factory&lt;T&gt;::createParser()</a> function needs access to the data, therefore these are publicly accessible. </p>
 
 <p>Definition at line <a class="el" href="../../d4/dee/a00008_source.html#l00348">348</a> of file <a class="el" href="../../d4/dee/a00008_source.html">argpp.cpp</a>.</p>
 
@@ -1684,7 +1684,7 @@ Friends</h2></td></tr>
 <div id="dynsection-27-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="../../d1/d7c/a00003_a9c73f4381a2e17d077ae97ff092e5f4a_icgraph.png" border="0" usemap="#d1/d7c/a00003_a9c73f4381a2e17d077ae97ff092e5f4a_icgraph" alt=""/></div>
 <map name="d1/d7c/a00003_a9c73f4381a2e17d077ae97ff092e5f4a_icgraph" id="d1/d7c/a00003_a9c73f4381a2e17d077ae97ff092e5f4a_icgraph">
-<area shape="rect" id="node2" href="../../de/d21/a00006.html#a02b3e834890ce3bf710b2ca62de53564" title="Call this function to create instances of classes derived from ArgppBase. " alt="" coords="232,5,420,32"/>
+<area shape="rect" id="node2" href="../../de/d21/a00006.html#ae4ea55ced81ec59e9eb905d1d7ff50f9" title="Call this function to create instances of classes derived from ArgppBase. " alt="" coords="232,5,420,32"/>
 </map>
 </div>
 </p>
@@ -1869,7 +1869,7 @@ Friends</h2></td></tr>
 <area shape="rect" id="node6" href="../../d0/d0b/a00004.html#a1b35fcd403213a6bf2dbd8079ec3e721" title="See documentation for ArgppBase::getArgv() " alt="" coords="711,57,893,98"/>
 <area shape="rect" id="node5" href="../../d1/d7c/a00003.html#a80376ac7b37ef428f39d784555f0b175" title="This is the only base class constructor available to derived classes. " alt="" coords="947,5,1145,32"/>
 <area shape="rect" id="node7" href="../../d1/d7c/a00003.html#a9c73f4381a2e17d077ae97ff092e5f4a" title="Returns the argv argument passed to the main() function, or NULL if the root parser hasn’t yet been ..." alt="" coords="957,64,1135,91"/>
-<area shape="rect" id="node8" href="../../de/d21/a00006.html#a02b3e834890ce3bf710b2ca62de53564" title="Call this function to create instances of classes derived from ArgppBase. " alt="" coords="1193,64,1381,91"/>
+<area shape="rect" id="node8" href="../../de/d21/a00006.html#ae4ea55ced81ec59e9eb905d1d7ff50f9" title="Call this function to create instances of classes derived from ArgppBase. " alt="" coords="1193,64,1381,91"/>
 <area shape="rect" id="node10" href="../../d1/d7c/a00003.html#a7e30adad84bf9de80809ae83b0e6168a" title="See documentation of setChildFlags() for details. " alt="" coords="705,123,899,149"/>
 <area shape="rect" id="node11" href="../../d0/d0b/a00004.html#aae3209d035a626fe93afc29fe55be7ee" title="Called by prepareParserVecs(). " alt="" coords="955,158,1137,199"/>
 <area shape="rect" id="node12" href="../../d0/d0b/a00004.html#a497d37ba22797241adfb6361f61e6476" title="This is called by parse() before argp_parse() is called. " alt="" coords="1196,187,1379,229"/>
@@ -2032,7 +2032,7 @@ Friends</h2></td></tr>
 <div id="dynsection-38-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="../../d1/d7c/a00003_af58f4baf37b3e6b771d0926f482f9b15_icgraph.png" border="0" usemap="#d1/d7c/a00003_af58f4baf37b3e6b771d0926f482f9b15_icgraph" alt=""/></div>
 <map name="d1/d7c/a00003_af58f4baf37b3e6b771d0926f482f9b15_icgraph" id="d1/d7c/a00003_af58f4baf37b3e6b771d0926f482f9b15_icgraph">
-<area shape="rect" id="node2" href="../../de/d21/a00006.html#a02b3e834890ce3bf710b2ca62de53564" title="Call this function to create instances of classes derived from ArgppBase. " alt="" coords="695,8,883,35"/>
+<area shape="rect" id="node2" href="../../de/d21/a00006.html#ae4ea55ced81ec59e9eb905d1d7ff50f9" title="Call this function to create instances of classes derived from ArgppBase. " alt="" coords="695,8,883,35"/>
 <area shape="rect" id="node3" href="../../d0/d0b/a00004.html#aa24846358fa355435cc48d42084931ba" title="See documentation for ArgppBase::isParentValid(). " alt="" coords="233,30,416,72"/>
 <area shape="rect" id="node7" href="../../d0/d0b/a00004.html#a13bc2299f39546454650655b9396e436" title="See documentation for ArgppBase::parse() " alt="" coords="233,96,416,137"/>
 <area shape="rect" id="node4" href="../../d1/d7c/a00003.html#a613661e08c784a4d4cd9e52cca365b29" title="Checks the pointer against all of the registered children in the root instance&#39;s tree of child object..." alt="" coords="464,30,647,72"/>
@@ -2177,7 +2177,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Called by the <a class="el" href="../../de/d21/a00006.html#a02b3e834890ce3bf710b2ca62de53564" title="Call this function to create instances of classes derived from ArgppBase. ">argpp::Factory&lt;T&gt;::createParser()</a> function when the first (root) instance is created. Subsequent calls do not do anything. </p>
+<p>Called by the <a class="el" href="../../de/d21/a00006.html#ae4ea55ced81ec59e9eb905d1d7ff50f9" title="Call this function to create instances of classes derived from ArgppBase. ">argpp::Factory&lt;T&gt;::createParser()</a> function when the first (root) instance is created. Subsequent calls do not do anything. </p>
 
 <p>Definition at line <a class="el" href="../../d4/dee/a00008_source.html#l00076">76</a> of file <a class="el" href="../../d4/dee/a00008_source.html">argpp.cpp</a>.</p>
 
@@ -2200,7 +2200,7 @@ Friends</h2></td></tr>
 <div id="dynsection-42-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="../../d1/d7c/a00003_a72f107ba1447b026b749ac4f3c68a431_icgraph.png" border="0" usemap="#d1/d7c/a00003_a72f107ba1447b026b749ac4f3c68a431_icgraph" alt=""/></div>
 <map name="d1/d7c/a00003_a72f107ba1447b026b749ac4f3c68a431_icgraph" id="d1/d7c/a00003_a72f107ba1447b026b749ac4f3c68a431_icgraph">
-<area shape="rect" id="node2" href="../../de/d21/a00006.html#a02b3e834890ce3bf710b2ca62de53564" title="Call this function to create instances of classes derived from ArgppBase. " alt="" coords="221,13,409,39"/>
+<area shape="rect" id="node2" href="../../de/d21/a00006.html#ae4ea55ced81ec59e9eb905d1d7ff50f9" title="Call this function to create instances of classes derived from ArgppBase. " alt="" coords="221,13,409,39"/>
 </map>
 </div>
 </p>
@@ -2437,7 +2437,7 @@ Friends</h2></td></tr>
 <area shape="rect" id="node2" href="../../d0/d0b/a00004.html#aa24846358fa355435cc48d42084931ba" title="See documentation for ArgppBase::isParentValid(). " alt="" coords="232,39,415,80"/>
 <area shape="rect" id="node3" href="../../d1/d7c/a00003.html#a613661e08c784a4d4cd9e52cca365b29" title="Checks the pointer against all of the registered children in the root instance&#39;s tree of child object..." alt="" coords="463,5,645,47"/>
 <area shape="rect" id="node5" href="../../d0/d0b/a00004.html#ac60b34fcdd3b86d1af98da3c59cf22c5" title="See documentation for argpp::ArgppBase::rootHasNonOptionArgs() for more details. " alt="" coords="463,71,645,112"/>
-<area shape="rect" id="node4" href="../../de/d21/a00006.html#a02b3e834890ce3bf710b2ca62de53564" title="Call this function to create instances of classes derived from ArgppBase. " alt="" coords="693,13,881,39"/>
+<area shape="rect" id="node4" href="../../de/d21/a00006.html#ae4ea55ced81ec59e9eb905d1d7ff50f9" title="Call this function to create instances of classes derived from ArgppBase. " alt="" coords="693,13,881,39"/>
 <area shape="rect" id="node6" href="../../d1/d7c/a00003.html#a0ff8e1cadd3eda18d1cd6cf9a3480f6d" title="Tells where non&#45;option arguments entered on the command line are stored: either in the root instance..." alt="" coords="697,71,877,112"/>
 </map>
 </div>
@@ -2502,7 +2502,7 @@ Friends</h2></td></tr>
 <div id="dynsection-51-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="../../d1/d7c/a00003_a613661e08c784a4d4cd9e52cca365b29_icgraph.png" border="0" usemap="#d1/d7c/a00003_a613661e08c784a4d4cd9e52cca365b29_icgraph" alt=""/></div>
 <map name="d1/d7c/a00003_a613661e08c784a4d4cd9e52cca365b29_icgraph" id="d1/d7c/a00003_a613661e08c784a4d4cd9e52cca365b29_icgraph">
-<area shape="rect" id="node2" href="../../de/d21/a00006.html#a02b3e834890ce3bf710b2ca62de53564" title="Call this function to create instances of classes derived from ArgppBase. " alt="" coords="236,13,424,39"/>
+<area shape="rect" id="node2" href="../../de/d21/a00006.html#ae4ea55ced81ec59e9eb905d1d7ff50f9" title="Call this function to create instances of classes derived from ArgppBase. " alt="" coords="236,13,424,39"/>
 </map>
 </div>
 </p>
@@ -3695,7 +3695,7 @@ Friends</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d2/de7/a00014.html">argpp</a></li><li class="navelem"><a class="el" href="../../d1/d7c/a00003.html">ArgppBase</a></li>
-    <li class="footer">Generated on Sat Jan 21 2017 15:50:39 for Argp++ by
+    <li class="footer">Generated on Sun Jan 22 2017 12:39:37 for Argp++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

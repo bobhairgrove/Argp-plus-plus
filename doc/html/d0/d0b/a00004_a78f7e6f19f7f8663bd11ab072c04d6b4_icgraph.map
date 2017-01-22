@@ -3,7 +3,7 @@
 <area shape="rect" id="node6" href="$d0/d0b/a00004.html#ac60b34fcdd3b86d1af98da3c59cf22c5" title="See documentation for argpp::ArgppBase::rootHasNonOptionArgs() for more details. " alt="" coords="1892,145,2075,186"/>
 <area shape="rect" id="node10" href="$d0/d0b/a00004.html#abf6403a4fadd47905e0cf6e3c34f188b" title="See documentation for ArgppBase::addParsedOption() " alt="" coords="236,458,419,499"/>
 <area shape="rect" id="node21" href="$d0/d0b/a00004.html#abf9aaa90533c97170613de3edfc02759" title="See documentation for ArgppBase::addNonOptionArg() " alt="" coords="236,295,419,337"/>
-<area shape="rect" id="node3" href="$de/d21/a00006.html#a02b3e834890ce3bf710b2ca62de53564" title="Call this function to create instances of classes derived from ArgppBase. " alt="" coords="961,160,1149,187"/>
+<area shape="rect" id="node3" href="$de/d21/a00006.html#ae4ea55ced81ec59e9eb905d1d7ff50f9" title="Call this function to create instances of classes derived from ArgppBase. " alt="" coords="961,160,1149,187"/>
 <area shape="rect" id="node4" href="$d0/d0b/a00004.html#aa24846358fa355435cc48d42084931ba" title="See documentation for ArgppBase::isParentValid(). " alt="" coords="473,94,656,135"/>
 <area shape="rect" id="node8" href="$d0/d0b/a00004.html#a13bc2299f39546454650655b9396e436" title="See documentation for ArgppBase::parse() " alt="" coords="1661,313,1844,354"/>
 <area shape="rect" id="node5" href="$d1/d7c/a00003.html#a613661e08c784a4d4cd9e52cca365b29" title="Checks the pointer against all of the registered children in the root instance&#39;s tree of child object..." alt="" coords="719,94,902,135"/>

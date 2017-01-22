@@ -4,6 +4,6 @@
 <area shape="rect" id="node3" href="$d1/d7c/a00003.html#ab7793f58644141a9963173a345dd5284" title="Takes an array of argp_option structs. " alt="" coords="467,5,667,32"/>
 <area shape="rect" id="node4" href="$d0/d0b/a00004.html#a1b35fcd403213a6bf2dbd8079ec3e721" title="See documentation for ArgppBase::getArgv() " alt="" coords="475,57,658,98"/>
 <area shape="rect" id="node5" href="$d1/d7c/a00003.html#a9c73f4381a2e17d077ae97ff092e5f4a" title="Returns the argv argument passed to the main() function, or NULL if the root parser hasn’t yet been ..." alt="" coords="715,64,893,91"/>
-<area shape="rect" id="node6" href="$de/d21/a00006.html#a02b3e834890ce3bf710b2ca62de53564" title="Call this function to create instances of classes derived from ArgppBase. " alt="" coords="941,64,1129,91"/>
+<area shape="rect" id="node6" href="$de/d21/a00006.html#ae4ea55ced81ec59e9eb905d1d7ff50f9" title="Call this function to create instances of classes derived from ArgppBase. " alt="" coords="941,64,1129,91"/>
 <area shape="rect" id="node8" href="$d1/d7c/a00003.html#a0ff8e1cadd3eda18d1cd6cf9a3480f6d" title="Tells where non&#45;option arguments entered on the command line are stored: either in the root instance..." alt="" coords="477,122,657,163"/>
 </map>

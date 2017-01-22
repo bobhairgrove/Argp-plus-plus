@@ -14,7 +14,7 @@
 <area shape="rect" id="node14" href="$d0/d0b/a00004.html#a1b35fcd403213a6bf2dbd8079ec3e721" title="See documentation for ArgppBase::getArgv() " alt="" coords="954,487,1137,528"/>
 <area shape="rect" id="node13" href="$d1/d7c/a00003.html#ab7793f58644141a9963173a345dd5284" title="Takes an array of argp_option structs. " alt="" coords="945,436,1145,462"/>
 <area shape="rect" id="node15" href="$d1/d7c/a00003.html#a9c73f4381a2e17d077ae97ff092e5f4a" title="Returns the argv argument passed to the main() function, or NULL if the root parser hasn’t yet been ..." alt="" coords="1195,494,1374,521"/>
-<area shape="rect" id="node16" href="$de/d21/a00006.html#a02b3e834890ce3bf710b2ca62de53564" title="Call this function to create instances of classes derived from ArgppBase. " alt="" coords="1424,494,1612,521"/>
+<area shape="rect" id="node16" href="$de/d21/a00006.html#ae4ea55ced81ec59e9eb905d1d7ff50f9" title="Call this function to create instances of classes derived from ArgppBase. " alt="" coords="1424,494,1612,521"/>
 <area shape="rect" id="node18" href="$d1/d7c/a00003.html#a43defefbdd5a9950bed15db86e4247fd" title="Child parsers can have different flags than what was passed to argp_parse(). " alt="" coords="706,78,889,119"/>
 <area shape="rect" id="node19" href="$d0/d0b/a00004.html#a6d4cfb33e45b3fe7d752b5d2abb8d0df" title="See documentation of argpp::ArgppBase::setChildFlags() for details. " alt="" coords="706,12,889,54"/>
 <area shape="rect" id="node20" href="$d1/d7c/a00003.html#a7e30adad84bf9de80809ae83b0e6168a" title="See documentation of setChildFlags() for details. " alt="" coords="949,22,1142,49"/>

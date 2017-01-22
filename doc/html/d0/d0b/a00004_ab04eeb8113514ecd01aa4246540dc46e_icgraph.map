@@ -4,7 +4,7 @@
 <area shape="rect" id="node3" href="$d0/d0b/a00004.html#aa24846358fa355435cc48d42084931ba" title="See documentation for ArgppBase::isParentValid(). " alt="" coords="472,21,655,63"/>
 <area shape="rect" id="node4" href="$d1/d7c/a00003.html#a613661e08c784a4d4cd9e52cca365b29" title="Checks the pointer against all of the registered children in the root instance&#39;s tree of child object..." alt="" coords="708,5,891,47"/>
 <area shape="rect" id="node6" href="$d0/d0b/a00004.html#ac60b34fcdd3b86d1af98da3c59cf22c5" title="See documentation for argpp::ArgppBase::rootHasNonOptionArgs() for more details. " alt="" coords="1405,64,1588,105"/>
-<area shape="rect" id="node5" href="$de/d21/a00006.html#a02b3e834890ce3bf710b2ca62de53564" title="Call this function to create instances of classes derived from ArgppBase. " alt="" coords="939,13,1127,39"/>
+<area shape="rect" id="node5" href="$de/d21/a00006.html#ae4ea55ced81ec59e9eb905d1d7ff50f9" title="Call this function to create instances of classes derived from ArgppBase. " alt="" coords="939,13,1127,39"/>
 <area shape="rect" id="node7" href="$d1/d7c/a00003.html#a0ff8e1cadd3eda18d1cd6cf9a3480f6d" title="Tells where non&#45;option arguments entered on the command line are stored: either in the root instance..." alt="" coords="1636,64,1816,105"/>
 <area shape="rect" id="node9" href="$d1/d7c/a00003.html#a7e30adad84bf9de80809ae83b0e6168a" title="See documentation of setChildFlags() for details. " alt="" coords="467,87,660,114"/>
 <area shape="rect" id="node10" href="$d0/d0b/a00004.html#aae3209d035a626fe93afc29fe55be7ee" title="Called by prepareParserVecs(). " alt="" coords="708,123,891,164"/>

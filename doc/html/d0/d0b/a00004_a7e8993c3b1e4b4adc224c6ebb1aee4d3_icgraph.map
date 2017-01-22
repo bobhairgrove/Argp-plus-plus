@@ -1,4 +1,4 @@
 <map id="argpp::impl::ArgppBaseImpl::getArgc" name="argpp::impl::ArgppBaseImpl::getArgc">
 <area shape="rect" id="node2" href="$d1/d7c/a00003.html#a5544f0335f6ce883c1a63c927aefa7e0" title="Returns the argc argument passed to the main() function, or 0 if the root parser hasn’t yet been cre..." alt="" coords="236,13,415,39"/>
-<area shape="rect" id="node3" href="$de/d21/a00006.html#a02b3e834890ce3bf710b2ca62de53564" title="Call this function to create instances of classes derived from ArgppBase. " alt="" coords="463,13,651,39"/>
+<area shape="rect" id="node3" href="$de/d21/a00006.html#ae4ea55ced81ec59e9eb905d1d7ff50f9" title="Call this function to create instances of classes derived from ArgppBase. " alt="" coords="463,13,651,39"/>
 </map>

@@ -10,5 +10,5 @@ var searchData=
   ['children_5f',['children_',['../d0/d0b/a00004.html#a10a1ff705a6d490bd70166a3122daeb9',1,'argpp::impl::ArgppBaseImpl']]],
   ['children_5fvec_5f',['children_vec_',['../d0/d0b/a00004.html#a66c1917485021590c8698f6746f06360',1,'argpp::impl::ArgppBaseImpl']]],
   ['clearallparsers',['clearAllParsers',['../d1/d7c/a00003.html#a024bec60f743de9e0b9b3ef7dd516b54',1,'argpp::ArgppBase::clearAllParsers()'],['../d0/d0b/a00004.html#ae23b1e6cc98c4820889786e170a9b6dd',1,'argpp::impl::ArgppBaseImpl::clearAllParsers()']]],
-  ['createparser',['createParser',['../de/d21/a00006.html#a02b3e834890ce3bf710b2ca62de53564',1,'argpp::Factory::createParser(int cargc, char **vargv, ArgppBase *parent=NULL)'],['../de/d21/a00006.html#a876294eaad23c7ec0fd30b2cbc0792f3',1,'argpp::Factory::createParser(ArgppBase *parent=NULL)']]]
+  ['createparser',['createParser',['../de/d21/a00006.html#ae4ea55ced81ec59e9eb905d1d7ff50f9',1,'argpp::Factory::createParser(int cargc, char **vargv, ArgppOptions const &amp;opts=ArgppOptions(), ArgppBase *parent=NULL)'],['../de/d21/a00006.html#a95aeb433976b531038767e031053e1a2',1,'argpp::Factory::createParser(ArgppOptions const &amp;opts=ArgppOptions(), ArgppBase *parent=NULL)']]]
 ];
