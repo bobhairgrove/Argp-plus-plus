@@ -264,6 +264,20 @@ namespace argpp {
         , doc_or_header_()
       {}
 
+      ArgppOption(const char *lname,
+                  int key,
+                  const char *arg,
+                  unsigned flags = 0,
+                  const char *doc = NULL,
+                  int grp = 0)
+        : key_          ( key   )
+        , flags_        ( flags )
+        , group_        ( grp   )
+        , long_name_    ( lname ? std::string(lname) : std::string())
+        , arg_          ( arg   ? std::string(arg)   : std::string())
+        , doc_or_header_( doc   ? std::string(doc)   : std::string())
+      {}
+
       ArgppOption(const ArgppOption &other)
         : key_          ( other.key_          )
         , flags_        ( other.flags_        )

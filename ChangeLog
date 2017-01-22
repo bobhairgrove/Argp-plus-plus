@@ -12,6 +12,9 @@
     since it would not be an exported symbol when building a DLL in 
     Microsoft Windows.
     
+  * Added an additional constructor to ArgppOption to facilitate 
+    literal initializations.
+    
   * updated documentation in the doc subfolder to reflect these changes.
 
 2017-01-04  Robert Hairgrove  <code@roberthairgrove.com>

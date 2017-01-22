@@ -46,7 +46,7 @@ var searchData=
   ['argppchildren',['ArgppChildren',['../d2/de7/a00014.html#a4b4b1d7c9d05aa600a309a124210996a',1,'argpp']]],
   ['argpperror',['argppError',['../d1/d7c/a00003.html#a11c6c4526a2a88a904ca2fd8f6370eac',1,'argpp::ArgppBase::argppError()'],['../d0/d0b/a00004.html#a169766aae532be5d8c388c70ef91a809',1,'argpp::impl::ArgppBaseImpl::argppError()']]],
   ['argppfailure',['argppFailure',['../d1/d7c/a00003.html#a8767791a65da4faec517f9890c0dcc25',1,'argpp::ArgppBase::argppFailure()'],['../d0/d0b/a00004.html#a51f320fa74ed117535ce4efb02ad42c3',1,'argpp::impl::ArgppBaseImpl::argppFailure()']]],
-  ['argppoption',['ArgppOption',['../dd/dad/a00005.html#aeba08b59209794fb3a683c063bd8acf5',1,'argpp::ArgppOption::ArgppOption()'],['../dd/dad/a00005.html#ab010880fbade4c657e8683bca5cd05b2',1,'argpp::ArgppOption::ArgppOption(const ArgppOption &amp;other)']]],
+  ['argppoption',['ArgppOption',['../dd/dad/a00005.html#aeba08b59209794fb3a683c063bd8acf5',1,'argpp::ArgppOption::ArgppOption()'],['../dd/dad/a00005.html#a8ea777102e259a22b3f036991eedf145',1,'argpp::ArgppOption::ArgppOption(const char *lname, int key, const char *arg, unsigned flags=0, const char *doc=NULL, int grp=0)'],['../dd/dad/a00005.html#ab010880fbade4c657e8683bca5cd05b2',1,'argpp::ArgppOption::ArgppOption(const ArgppOption &amp;other)']]],
   ['argppoption',['ArgppOption',['../dd/dad/a00005.html',1,'argpp']]],
   ['argppoptions',['ArgppOptions',['../d2/de7/a00014.html#a160acd8adf776c633e0ff8632293f8a4',1,'argpp']]],
   ['argppstatehelp',['argppStateHelp',['../d1/d7c/a00003.html#ac3817b11668e482acc6527332387b9b2',1,'argpp::ArgppBase::argppStateHelp()'],['../d0/d0b/a00004.html#a691b4936fdbe0e359567ac57cd5308e4',1,'argpp::impl::ArgppBaseImpl::argppStateHelp()']]],

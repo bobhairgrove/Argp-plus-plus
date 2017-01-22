@@ -1,6 +1,7 @@
 var a00005 =
 [
     [ "ArgppOption", "dd/dad/a00005.html#aeba08b59209794fb3a683c063bd8acf5", null ],
+    [ "ArgppOption", "dd/dad/a00005.html#a8ea777102e259a22b3f036991eedf145", null ],
     [ "ArgppOption", "dd/dad/a00005.html#ab010880fbade4c657e8683bca5cd05b2", null ],
     [ "operator<", "dd/dad/a00005.html#a0f1ca1c3fe2c349995b1cc3668e22342", null ],
     [ "operator=", "dd/dad/a00005.html#a866ef64c169b07bd0605d763dfb56c58", null ],
